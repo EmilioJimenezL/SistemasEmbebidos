@@ -1,0 +1,28 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=Practica1
+[Library]
+Practica1=.\Practica1\Practica1.lib
+[$LibMap$]
+Practica1=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+[IMPLEMENTATION]
+UCF=
+[Files]
+/four_bit_adder.v=-1
+/testbench.v=-1
+[Files.Data]
+.\src\four_bit_adder.v=Verilog Source Code
+.\src\testbench.v=Verilog Source Code

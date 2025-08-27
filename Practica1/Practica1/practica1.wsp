@@ -1,0 +1,11 @@
+[CACHESIMPLE|Aldec.SymbolsCommands.7]
+Built-in symbols=0
+Practica1=0
+[COMPILESTATUS|.\src\four_bit_adder.v]
+FileTimeLow=1198043104
+FileTimeHigh=31201185
+Status=Compiled
+[COMPILESTATUS|.\src\testbench.v]
+FileTimeLow=1261414769
+FileTimeHigh=31201185
+Status=Compiled
