@@ -2,10 +2,10 @@
 Built-in symbols=0
 Practica1=0
 [COMPILESTATUS|.\src\four_bit_adder.v]
-FileTimeLow=1198043104
-FileTimeHigh=31201185
+FileTimeLow=3620767477
+FileTimeHigh=31201188
 Status=Compiled
 [COMPILESTATUS|.\src\testbench.v]
-FileTimeLow=1261414769
-FileTimeHigh=31201185
+FileTimeLow=1832627071
+FileTimeHigh=31201188
 Status=Compiled
