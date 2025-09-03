@@ -1,0 +1,38 @@
+timestamp=1756836102186
+
+[~A]
+D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/Problema1.v=0*15469*16056
+D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/corrimiento_paralelo_tb.v=0*28385*29066
+LastVerilogToplevel=corrimiento_paralelo_tb
+ModifyID=19
+Version=74
+
+[~MFT]
+0=6|0tarea1.mgf|29066|19471
+1=4|1tarea1.mgf|32592|30365
+3=8|3tarea1.mgf|23882|21318
+
+[$root]
+A/$root=22|||1*32218
+BinW64/$root=3*22786
+SLP=3*22901
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216f3a7dd5a0cb1deb1184bfddfb25fdb00
+
+[corrimiento_paralelo]
+A/corrimiento_paralelo=22|../src/Problema1.v|1|1*17279
+BinW64/corrimiento_paralelo=3*10777
+R=../src/Problema1.v|1
+SLP=3*11830
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1b6c734626e8374d167e7caf552558f0d3b8b03d6e4d60c87fdea64324ded94bd
+
+[corrimiento_paralelo_tb]
+A/corrimiento_paralelo_tb=22|../src/corrimiento_paralelo_tb.v|3|1*32592
+BinW64/corrimiento_paralelo_tb=3*22969
+R=../src/corrimiento_paralelo_tb.v|3
+SLP=3*23882
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1eb42bdefa2714eee44b86c769fef33ef26527262ddaa47cb266f3a3c4d9b973a479cf5b7db23ea8229d677e56b9ad664
+
+[~U]
+$root=12|0*27988|
+corrimiento_paralelo=12|0*15211|
+corrimiento_paralelo_tb=12|0*28186||0x10
