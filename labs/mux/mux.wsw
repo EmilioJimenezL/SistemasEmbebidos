@@ -1,0 +1,13 @@
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\mux.v|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\flipflop.v|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\contador_ascendente.v|]
+TemplateId=2
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\contador_descendente.v|]
+TemplateId=2
+ActiveDocument=1
+tab=lu

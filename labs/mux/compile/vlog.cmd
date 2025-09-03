@@ -1,0 +1,1 @@
+-o "d:/Tareas/Otoño 25/Sistemas Embebidos/labs/mux/compile" -lc "d:/Tareas/Otoño 25/Sistemas Embebidos/labs/mux/library.cfg" -fl "d:/Tareas/Otoño 25/Sistemas Embebidos/labs/mux/projlib.cfg" -pli "C:/Aldec/Active-HDL-Student-Edition/bin/systf.dll" -O2 -sve -msg 5 -sv2k17 -work mux "d:/Tareas/Otoño 25/Sistemas Embebidos/labs/mux/src/contador_descendente.v" 

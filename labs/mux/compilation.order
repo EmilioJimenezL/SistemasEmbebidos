@@ -1,0 +1,4 @@
+.\src\mux.v
+.\src\flipflop.v
+.\src\contador_ascendente.v
+.\src\contador_descendente.v

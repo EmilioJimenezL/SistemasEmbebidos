@@ -1,0 +1,32 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=mux
+[Library]
+mux=.\mux\mux.lib
+[$LibMap$]
+mux=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/mux.v=-1
+/flipflop.v=-1
+/contador_ascendente.v=-1
+/contador_descendente.v=-1
+[Files.Data]
+.\src\mux.v=Verilog Source Code
+.\src\flipflop.v=Verilog Source Code
+.\src\contador_ascendente.v=Verilog Source Code
+.\src\contador_descendente.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

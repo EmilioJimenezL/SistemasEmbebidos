@@ -1,0 +1,43 @@
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/mux.v
+# Error: VCP2000 mux.v : (2, 2): Syntax error. Unexpected token: 2[_UNSIGNED_NUMBER].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/mux.v
+# Error: VCP2000 mux.v : (9, 4): Syntax error. Unexpected token: non-printable: \x92.
+# Error: VCP2000 mux.v : (10, 3): Syntax error. Unexpected token: non-printable: \x92.
+# Error: VCP2000 mux.v : (11, 3): Syntax error. Unexpected token: non-printable: \x92.
+# Error: VCP2000 mux.v : (12, 3): Syntax error. Unexpected token: non-printable: \x92.
+# Error: VCP2020 mux.v : (13, 9): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2020 mux.v : (13, 9): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 mux.v : (13, 9): Syntax error. Unexpected token: endcase[_ENDCASE].
+# Compile failure 7 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/mux.v
+# Error: VCP5103 mux.v : (9, 8): Undeclared identifier: b00.
+# Error: VCP5103 mux.v : (10, 7): Undeclared identifier: b01.
+# Error: VCP5103 mux.v : (11, 6): Undeclared identifier: b10.
+# Error: VCP5103 mux.v : (12, 7): Undeclared identifier: b11.
+# Compile failure 4 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/mux.v
+# Unit top modules: mux.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/flipflop.v
+# Error: VCP2000 flipflop.v : (3, 2): Syntax error. Unexpected token: 2[_UNSIGNED_NUMBER].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/flipflop.v
+# Error: VCP2000 flipflop.v : (16, 2): Syntax error. Unexpected token: non-printable: \xa0.
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/flipflop.v
+# Unit top modules: flipflop.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/contador_ascendente.v
+# Unit top modules: contador_ascendente.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work mux $dsn/src/contador_descendente.v
+# Unit top modules: contador_descendente.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
