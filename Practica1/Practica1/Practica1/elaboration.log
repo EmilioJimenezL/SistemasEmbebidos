@@ -1,26 +1,25 @@
-Active-HDL 15.0.261.9132 2025-08-27 16:46:41
+Active-HDL 15.0.261.9132 2025-09-08 00:16:20
 
 Elaboration top modules:
-Verilog Module                tb_four_bit_adder
+Verilog Module                tb_full_adder
 
 
 ---------------------------------------------------------------------------------------------
 Verilog Module          | Library   | Info | Compiler Version          | Compilation Options
 ---------------------------------------------------------------------------------------------
-tb_four_bit_adder       | Practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-four_bit_adder          | Practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-half_adder              | Practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-full_adder              | Practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+tb_full_adder           | practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+full_adder              | practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+half_adder              | practica1 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
 Library                 | Comment
 ---------------------------------------------------------------------------------------------
-Practica1               | None
+practica1               | None
 ---------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+tb_four_bit_adder tb_four_bit_adder
+Simulation Options: asim -O5 +access +r +m+tb_full_adder tb_full_adder
 
 
 The performance of simulation is reduced. Version Student Edition

@@ -1,38 +1,72 @@
-timestamp=1756836102186
+timestamp=1757305516684
 
 [~A]
 D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/Problema1.v=0*15469*16056
+D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/Tarea1.v=0*81147*82083
 D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/corrimiento_paralelo_tb.v=0*28385*29066
-LastVerilogToplevel=corrimiento_paralelo_tb
-ModifyID=19
+D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/testbenches.v=0*78642*79824
+LastVerilogToplevel=tb_registro_paralelo_serie
+ModifyID=43
 Version=74
 
 [~MFT]
-0=6|0tarea1.mgf|29066|19471
-1=4|1tarea1.mgf|32592|30365
-3=8|3tarea1.mgf|23882|21318
+0=7|0tarea1.mgf|82083|52354
+1=6|1tarea1.mgf|124587|115768
+3=12|3tarea1.mgf|110487|99532
 
 [$root]
-A/$root=22|||1*32218
-BinW64/$root=3*22786
-SLP=3*22901
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216f3a7dd5a0cb1deb1184bfddfb25fdb00
+A/$root=22|||1*122913
+BinW64/$root=3*108350
+SLP=3*108465
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92164deabf0eb17724367b231420949fff9e
 
 [corrimiento_paralelo]
-A/corrimiento_paralelo=22|../src/Problema1.v|1|1*17279
-BinW64/corrimiento_paralelo=3*10777
-R=../src/Problema1.v|1
-SLP=3*11830
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1b6c734626e8374d167e7caf552558f0d3b8b03d6e4d60c87fdea64324ded94bd
+A/corrimiento_paralelo=22|../src/Tarea1.v|5|1*123319
+BinW64/corrimiento_paralelo=3*108533
+R=../src/Tarea1.v|5
+SLP=3*109179
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1b6c734626e8374d167e7caf552558f0d6c969c2a88d84ca18b593e2a2c30ef1f
 
 [corrimiento_paralelo_tb]
-A/corrimiento_paralelo_tb=22|../src/corrimiento_paralelo_tb.v|3|1*32592
-BinW64/corrimiento_paralelo_tb=3*22969
-R=../src/corrimiento_paralelo_tb.v|3
-SLP=3*23882
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1eb42bdefa2714eee44b86c769fef33ef26527262ddaa47cb266f3a3c4d9b973a479cf5b7db23ea8229d677e56b9ad664
+A/corrimiento_paralelo_tb=22|../src/testbenches.v|6|1*119392
+BinW64/corrimiento_paralelo_tb=3*104108
+R=../src/testbenches.v|6
+SLP=3*105021
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1eb42bdefa2714eee44b86c769fef33ef26527262ddaa47cb266f3a3c4d9b973a502141a839d91f9e2a166a4862011b57
+
+[corrimiento_serial]
+A/corrimiento_serial=22|../src/Tarea1.v|22|1*80072
+BinW64/corrimiento_serial=3*63912
+R=../src/Tarea1.v|22
+SLP=3*64787
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fb3be0d4e5e471a3a36ec7fe02540a1d8987b2b07e757a4085f19e62296e790f63a2fdbf64b81fb6fe68db045dcec89
+
+[registro_paralelo_serie]
+A/registro_paralelo_serie=22|../src/Tarea1.v|35|1*124587
+BinW64/registro_paralelo_serie=3*109575
+R=../src/Tarea1.v|35
+SLP=3*110487
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ff9b11051af06d5ecda911b4aef25716d7682324d0cd0656f05db94af539eeb726527262ddaa47cb266f3a3c4d9b973af198dce5e8a72067e5286d7bcde808f0
+
+[tb_corrimiento_serial]
+A/tb_corrimiento_serial=22|../src/testbenches.v|40|1*83568
+BinW64/tb_corrimiento_serial=3*67069
+R=../src/testbenches.v|40
+SLP=3*68847
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c18141cbc609f54075a111ef1f29f32e4bba0526a4b4317dff5f33b4ca474eaf105e5ab24c7fd1b9b7bb4b28de124e13
+
+[tb_registro_paralelo_serie]
+A/tb_registro_paralelo_serie=22|../src/testbenches.v|43|1*120886
+BinW64/tb_registro_paralelo_serie=3*105548
+R=../src/testbenches.v|43
+SLP=3*107245
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|10947d0b7e9cce2b04cd5f66ebb58946ed0f009caba6ce69c9585b02ecbcb0cff21f1f1634f08e4e19ba63e89a6acfd1feba66d71f1981148bec894bf818e35c
 
 [~U]
-$root=12|0*27988|
-corrimiento_paralelo=12|0*15211|
-corrimiento_paralelo_tb=12|0*28186||0x10
+$root=12|0*80374|
+corrimiento_paralelo=12|0*80620|
+corrimiento_paralelo_tb=12|0*78241||0x10
+corrimiento_serial=12|0*53129|
+registro_paralelo_serie=12|0*80878|
+tb_corrimiento_serial=12|0*55240||0x10
+tb_registro_paralelo_serie=12|0*78440||0x10

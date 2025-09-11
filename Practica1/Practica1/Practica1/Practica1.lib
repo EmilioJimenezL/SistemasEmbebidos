@@ -1,70 +1,71 @@
-timestamp=1756334967954
+timestamp=1757311388850
 
 [~A]
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica1/Practica1/src/four_bit_adder.v=0*14794*15584
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica1/Practica1/src/four_bit_adder.v_testbench.v=0*17648*19027
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica1/Practica1/src/testbench.v=0*12321*13298
 LastVerilogToplevel=tb_four_bit_adder
-ModifyID=8
+ModifyID=9
 Version=74
 
 [~MFT]
-0=8|0Practica1.mgf|15584|7290
-1=8|1Practica1.mgf|24139|17831
-3=16|3Practica1.mgf|17257|10879
+0=9|0Practica1.mgf|19027|7290
+1=14|1Practica1.mgf|32562|25862
+3=28|3Practica1.mgf|23508|17594
 
 [$root]
-A/$root=22|||1*21395
-BinW64/$root=3*15893
-SLP=3*16008
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921659db0ec833a9ee2286c416fb73af5acb
+A/$root=22|||1*25862
+BinW64/$root=3*17594
+SLP=3*17709
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216f78cbc2c62b37020722563d1c935aa3e
 
 [four_bit_adder]
-A/four_bit_adder=22|../src/four_bit_adder.v|39|1*24139
-BinW64/four_bit_adder=3*17133
+A/four_bit_adder=22|../src/four_bit_adder.v|39|1*28606
+BinW64/four_bit_adder=3*18834
 R=../src/four_bit_adder.v|39
-SLP=3*17257
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bac176bb450095e1b63aef2ea83dde04ac8ab1f5213ede218e21cf60b5ea1524f2de823c47b2982b57cff5c2b07d5d6e
+SLP=3*18958
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bac176bb450095e1b63aef2ea83dde04ac8ab1f5213ede218e21cf60b5ea1524a4a73d92983e99b280c3ff99cfbd1d28
 
 [full_adder]
-A/full_adder=22|../src/four_bit_adder.v|12|1*22704
-BinW64/full_adder=3*16633
+A/full_adder=22|../src/four_bit_adder.v|12|1*27171
+BinW64/full_adder=3*18334
 R=../src/four_bit_adder.v|12
-SLP=3*16964
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b6bc4c72c6b4732d30366d04e0b9d81ca93b35da59acef6f28d70118359e933e816bf5777f29f77d4b233c6a10d4746c
+SLP=3*18665
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b6bc4c72c6b4732d30366d04e0b9d81ca93b35da59acef6f28d70118359e933e2f4c7a164c332614657c31cbeddb6ebc
 
 [half_adder]
-A/half_adder=22|../src/four_bit_adder.v|1|1*21785
-BinW64/half_adder=3*16076
+A/half_adder=22|../src/four_bit_adder.v|1|1*26252
+BinW64/half_adder=3*17777
 R=../src/four_bit_adder.v|1
-SLP=3*16443
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|9d478890ab412e42d6b75255d560236f41ab0ed49771ee80612b3666c997a9c28f6d7fb873559a80b7a5fb691ba9b3b4
+SLP=3*18144
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|9d478890ab412e42d6b75255d560236f41ab0ed49771ee80612b3666c997a9c2837a7ceaac1e0ecec8347b256aed230a
 
 [tb_four_bit_adder]
-A/tb_four_bit_adder=22|../src/testbench.v|88|1*20064
-BinW64/tb_four_bit_adder=3*14098
+A/tb_four_bit_adder=22|../src/testbench.v|88|1*32562
+BinW64/tb_four_bit_adder=3*22514
 R=../src/testbench.v|88
-SLP=3*15092
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3ee1e581556dd929d7f2672c9a4d5e71d9f2871ccae0bd02d5e2f6e9d67b6e3733e6682976ef6d10ee749a1e3133b98b
+SLP=3*23508
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3ee1e581556dd929d7f2672c9a4d5e71d9f2871ccae0bd02d5e2f6e9d67b6e376b43a8cae3d80ab3ae0a72440a9f88da
 
 [tb_full_adder]
-A/tb_full_adder=22|../src/testbench.v|39|1*18903
-BinW64/tb_full_adder=3*12237
+A/tb_full_adder=22|../src/testbench.v|39|1*31401
+BinW64/tb_full_adder=3*20653
 R=../src/testbench.v|39
-SLP=3*13264
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d6445fb991c85e5194ec988389c52d03718b03fcde0f508154d43f2ecf749403527ad337b69540ec66cea784748f1930
+SLP=3*21680
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d6445fb991c85e5194ec988389c52d03718b03fcde0f508154d43f2ecf749403fd5aae18fc77a814f86321ec2a39a846
 
 [tb_half_adder]
-A/tb_half_adder=22|../src/testbench.v|3|1*17831
-BinW64/tb_half_adder=3*10879
+A/tb_half_adder=22|../src/testbench.v|3|1*30329
+BinW64/tb_half_adder=3*19295
 R=../src/testbench.v|3
-SLP=3*11690
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|967c5c6647f17151693a52f249b4c6fe3f800c1d40121ec757fa4759f7894fac85e9f38069fbf71cbe3a0552f39841ad
+SLP=3*20106
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|967c5c6647f17151693a52f249b4c6fe3f800c1d40121ec757fa4759f7894fac1c2e77f6793c71de33eef05b273a0dfc
 
 [~U]
-$root=12|0*13852|
-four_bit_adder=12|0*14526|
-full_adder=12|0*14293|
-half_adder=12|0*14082|
-tb_four_bit_adder=12|0*12138||0x10
-tb_full_adder=12|0*11963||0x10
-tb_half_adder=12|0*11788||0x10
+$root=12|0*16143|
+four_bit_adder=12|0*16817|
+full_adder=12|0*16584|
+half_adder=12|0*16373|
+tb_four_bit_adder=12|0*17447||0x10
+tb_full_adder=12|0*17260||0x10
+tb_half_adder=12|0*17085||0x10

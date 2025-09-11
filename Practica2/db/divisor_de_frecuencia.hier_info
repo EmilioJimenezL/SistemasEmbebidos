@@ -1,0 +1,35 @@
+|divisor_de_frecuencia
+clk => clk.IN1
+rst => rst.IN2
+en => en.IN1
+count[0] << <GND>
+count[1] << <GND>
+count[2] << <GND>
+count[3] << <GND>
+
+
+|divisor_de_frecuencia|divisor:divider1
+clk => clk_1hz~reg0.CLK
+rst => clk_1hz~reg0.ACLR
+clk_1hz <= clk_1hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|divisor_de_frecuencia|contador_ascendente:contador1
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+rst => count[0]~reg0.ACLR
+rst => count[1]~reg0.ACLR
+rst => count[2]~reg0.ACLR
+rst => count[3]~reg0.ACLR
+en => count[3]~reg0.ENA
+en => count[2]~reg0.ENA
+en => count[1]~reg0.ENA
+en => count[0]~reg0.ENA
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
