@@ -1,3 +1,180 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Warning: ELBREAD_0049 The "corrimiento_paralelo" design unit does not have a time unit/precision defined but other design units do.
 # ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+corrimiento_paralelo_tb corrimiento_paralelo_tb
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "corrimiento_paralelo" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Finished. Using existing simulator library
+# SLP: 0 primitives and 4 (100.00%) other processes in SLP
+# SLP: 10 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 0.2 [s].
+# KERNEL: SLP loading done - time: 0.2 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4668 kB (elbread=427 elab2=4106 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otoño 25\Sistemas Embebidos\Tarea1\Tarea1\src\wave.asdb
+#  11:08 p. m., domingo, 7 de septiembre de 2025
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb'.
+run
+# RUNTIME: Info: RUNTIME_0068 testbenches.v (38): $finish called.
+# KERNEL: Time: 70 ns,  Iteration: 0,  Instance: /corrimiento_paralelo_tb,  Process: @INITIAL#29_2@.
+# KERNEL: stopped at time: 70 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "registro_paralelo_serie" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+tb_registro_paralelo_serie tb_registro_paralelo_serie
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 The "registro_paralelo_serie" design unit does not have a time unit/precision defined but other design units do.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 1.2 [s]
+# SLP: Finished : 1.4 [s]
+# SLP: 0 primitives and 3 (100.00%) other processes in SLP
+# SLP: 16 (100.00%) signals in SLP and 0 interface signals
+# ELAB2: Elaboration final pass complete - time: 1.4 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 4670 kB (elbread=427 elab2=4109 kernel=134 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otoño 25\Sistemas Embebidos\Tarea1\Tarea1\src\wave.asdb
+#  11:24 p. m., domingo, 7 de septiembre de 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb'.
+# Warning: WAVEFORM: Object matching /corrimiento_paralelo_tb/clk not found in D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /corrimiento_paralelo_tb/rst not found in D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /corrimiento_paralelo_tb/data_in not found in D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /corrimiento_paralelo_tb/control not found in D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb.
+# Warning: WAVEFORM: Object matching /corrimiento_paralelo_tb/data_out not found in D:/Tareas/Otoño 25/Sistemas Embebidos/Tarea1/Tarea1/src/wave.asdb.
+# VSIM: 6 object(s) traced.
+run
+# KERNEL: Inicio del testbench
+# KERNEL: t=0ns | rst=1 start=0 data_in=0000 | data_out=0 data_ready=0
+# KERNEL: t=10ns | rst=0 start=1 data_in=0000 | data_out=0 data_ready=0
+# KERNEL: t=20ns | rst=0 start=0 data_in=0000 | data_out=0 data_ready=0
+# KERNEL: t=55ns | rst=0 start=0 data_in=0000 | data_out=0 data_ready=1
+# KERNEL: t=65ns | rst=0 start=0 data_in=0000 | data_out=0 data_ready=0
+# KERNEL: t=70ns | rst=0 start=1 data_in=0001 | data_out=0 data_ready=0
+# KERNEL: t=80ns | rst=0 start=0 data_in=0001 | data_out=0 data_ready=0
+# KERNEL: t=85ns | rst=0 start=0 data_in=0001 | data_out=1 data_ready=0
+# KERNEL: t=95ns | rst=0 start=0 data_in=0001 | data_out=0 data_ready=0
+# KERNEL: t=115ns | rst=0 start=0 data_in=0001 | data_out=0 data_ready=1
+# KERNEL: t=125ns | rst=0 start=0 data_in=0001 | data_out=0 data_ready=0
+# KERNEL: t=130ns | rst=0 start=1 data_in=0010 | data_out=0 data_ready=0
+# KERNEL: t=140ns | rst=0 start=0 data_in=0010 | data_out=0 data_ready=0
+# KERNEL: t=155ns | rst=0 start=0 data_in=0010 | data_out=1 data_ready=0
+# KERNEL: t=165ns | rst=0 start=0 data_in=0010 | data_out=0 data_ready=0
+# KERNEL: t=175ns | rst=0 start=0 data_in=0010 | data_out=0 data_ready=1
+# KERNEL: t=185ns | rst=0 start=0 data_in=0010 | data_out=0 data_ready=0
+# KERNEL: t=190ns | rst=0 start=1 data_in=0011 | data_out=0 data_ready=0
+# KERNEL: t=200ns | rst=0 start=0 data_in=0011 | data_out=0 data_ready=0
+# KERNEL: t=205ns | rst=0 start=0 data_in=0011 | data_out=1 data_ready=0
+# KERNEL: t=225ns | rst=0 start=0 data_in=0011 | data_out=0 data_ready=0
+# KERNEL: t=235ns | rst=0 start=0 data_in=0011 | data_out=0 data_ready=1
+# KERNEL: t=245ns | rst=0 start=0 data_in=0011 | data_out=0 data_ready=0
+# KERNEL: t=250ns | rst=0 start=1 data_in=0100 | data_out=0 data_ready=0
+# KERNEL: t=260ns | rst=0 start=0 data_in=0100 | data_out=0 data_ready=0
+# KERNEL: t=285ns | rst=0 start=0 data_in=0100 | data_out=1 data_ready=0
+# KERNEL: t=295ns | rst=0 start=0 data_in=0100 | data_out=0 data_ready=1
+# KERNEL: t=305ns | rst=0 start=0 data_in=0100 | data_out=0 data_ready=0
+# KERNEL: t=310ns | rst=0 start=1 data_in=0101 | data_out=0 data_ready=0
+# KERNEL: t=320ns | rst=0 start=0 data_in=0101 | data_out=0 data_ready=0
+# KERNEL: t=325ns | rst=0 start=0 data_in=0101 | data_out=1 data_ready=0
+# KERNEL: t=335ns | rst=0 start=0 data_in=0101 | data_out=0 data_ready=0
+# KERNEL: t=345ns | rst=0 start=0 data_in=0101 | data_out=1 data_ready=0
+# KERNEL: t=355ns | rst=0 start=0 data_in=0101 | data_out=0 data_ready=1
+# KERNEL: t=365ns | rst=0 start=0 data_in=0101 | data_out=0 data_ready=0
+# KERNEL: t=370ns | rst=0 start=1 data_in=0110 | data_out=0 data_ready=0
+# KERNEL: t=380ns | rst=0 start=0 data_in=0110 | data_out=0 data_ready=0
+# KERNEL: t=395ns | rst=0 start=0 data_in=0110 | data_out=1 data_ready=0
+# KERNEL: t=415ns | rst=0 start=0 data_in=0110 | data_out=0 data_ready=1
+# KERNEL: t=425ns | rst=0 start=0 data_in=0110 | data_out=0 data_ready=0
+# KERNEL: t=430ns | rst=0 start=1 data_in=0111 | data_out=0 data_ready=0
+# KERNEL: t=440ns | rst=0 start=0 data_in=0111 | data_out=0 data_ready=0
+# KERNEL: t=445ns | rst=0 start=0 data_in=0111 | data_out=1 data_ready=0
+# KERNEL: t=475ns | rst=0 start=0 data_in=0111 | data_out=0 data_ready=1
+# KERNEL: t=485ns | rst=0 start=0 data_in=0111 | data_out=0 data_ready=0
+# KERNEL: t=490ns | rst=0 start=1 data_in=1000 | data_out=0 data_ready=0
+# KERNEL: t=500ns | rst=0 start=0 data_in=1000 | data_out=0 data_ready=0
+# KERNEL: t=535ns | rst=0 start=0 data_in=1000 | data_out=1 data_ready=1
+# KERNEL: t=545ns | rst=0 start=0 data_in=1000 | data_out=1 data_ready=0
+# KERNEL: t=550ns | rst=0 start=1 data_in=1001 | data_out=1 data_ready=0
+# KERNEL: t=560ns | rst=0 start=0 data_in=1001 | data_out=1 data_ready=0
+# KERNEL: t=575ns | rst=0 start=0 data_in=1001 | data_out=0 data_ready=0
+# KERNEL: t=595ns | rst=0 start=0 data_in=1001 | data_out=1 data_ready=1
+# KERNEL: t=605ns | rst=0 start=0 data_in=1001 | data_out=1 data_ready=0
+# KERNEL: t=610ns | rst=0 start=1 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=620ns | rst=0 start=0 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=625ns | rst=0 start=0 data_in=1010 | data_out=0 data_ready=0
+# KERNEL: t=635ns | rst=0 start=0 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=645ns | rst=0 start=0 data_in=1010 | data_out=0 data_ready=0
+# KERNEL: t=655ns | rst=0 start=0 data_in=1010 | data_out=1 data_ready=1
+# KERNEL: t=665ns | rst=0 start=0 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=670ns | rst=0 start=1 data_in=1011 | data_out=1 data_ready=0
+# KERNEL: t=680ns | rst=0 start=0 data_in=1011 | data_out=1 data_ready=0
+# KERNEL: t=705ns | rst=0 start=0 data_in=1011 | data_out=0 data_ready=0
+# KERNEL: t=715ns | rst=0 start=0 data_in=1011 | data_out=1 data_ready=1
+# KERNEL: t=725ns | rst=0 start=0 data_in=1011 | data_out=1 data_ready=0
+# KERNEL: t=730ns | rst=0 start=1 data_in=1100 | data_out=1 data_ready=0
+# KERNEL: t=740ns | rst=0 start=0 data_in=1100 | data_out=1 data_ready=0
+# KERNEL: t=745ns | rst=0 start=0 data_in=1100 | data_out=0 data_ready=0
+# KERNEL: t=765ns | rst=0 start=0 data_in=1100 | data_out=1 data_ready=0
+# KERNEL: t=775ns | rst=0 start=0 data_in=1100 | data_out=1 data_ready=1
+# KERNEL: t=785ns | rst=0 start=0 data_in=1100 | data_out=1 data_ready=0
+# KERNEL: t=790ns | rst=0 start=1 data_in=1101 | data_out=1 data_ready=0
+# KERNEL: t=800ns | rst=0 start=0 data_in=1101 | data_out=1 data_ready=0
+# KERNEL: t=815ns | rst=0 start=0 data_in=1101 | data_out=0 data_ready=0
+# KERNEL: t=825ns | rst=0 start=0 data_in=1101 | data_out=1 data_ready=0
+# KERNEL: t=835ns | rst=0 start=0 data_in=1101 | data_out=1 data_ready=1
+# KERNEL: t=845ns | rst=0 start=0 data_in=1101 | data_out=1 data_ready=0
+# KERNEL: t=850ns | rst=0 start=1 data_in=1110 | data_out=1 data_ready=0
+# KERNEL: t=860ns | rst=0 start=0 data_in=1110 | data_out=1 data_ready=0
+# KERNEL: t=865ns | rst=0 start=0 data_in=1110 | data_out=0 data_ready=0
+# KERNEL: t=875ns | rst=0 start=0 data_in=1110 | data_out=1 data_ready=0
+# KERNEL: t=895ns | rst=0 start=0 data_in=1110 | data_out=1 data_ready=1
+# KERNEL: t=905ns | rst=0 start=0 data_in=1110 | data_out=1 data_ready=0
+# KERNEL: t=910ns | rst=0 start=1 data_in=1111 | data_out=1 data_ready=0
+# KERNEL: t=920ns | rst=0 start=0 data_in=1111 | data_out=1 data_ready=0
+# KERNEL: t=955ns | rst=0 start=0 data_in=1111 | data_out=1 data_ready=1
+# KERNEL: t=965ns | rst=0 start=0 data_in=1111 | data_out=1 data_ready=0
+# KERNEL: t=970ns | rst=0 start=1 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=980ns | rst=0 start=0 data_in=1010 | data_out=1 data_ready=0
+# KERNEL: t=985ns | rst=0 start=0 data_in=1010 | data_out=0 data_ready=0
+# KERNEL: t=990ns | rst=1 start=0 data_in=1010 | data_out=0 data_ready=0
+# KERNEL: t=1000ns | rst=0 start=0 data_in=1010 | data_out=0 data_ready=0
+# KERNEL: ? Testbench finalizado
+# RUNTIME: Info: RUNTIME_0068 testbenches.v (97): $finish called.
+# KERNEL: Time: 1020 ns,  Iteration: 0,  Instance: /tb_registro_paralelo_serie,  Process: @INITIAL#65_2@.
+# KERNEL: stopped at time: 1020 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.

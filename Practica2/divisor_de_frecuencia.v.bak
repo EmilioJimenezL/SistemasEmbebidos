@@ -1,0 +1,66 @@
+module divisor(
+	input wire clk,
+	input wire rst,
+	output reg clk_1hz
+	);	  
+	
+	parameter INPUT_FREQ =  50_000_000; //es un tipo de dato 
+	parameter MAX_COUNT = INPUT_FREQ - 1; // es lo ,
+	
+	reg [25:0] counter;// log2 (5x10 a la 7) = 26 bits 
+	
+	always @(posedge clk or posedge rst) begin // esta indicando 
+		// para convertir la freciencia de 50M a 1 Hz divide entre 1x10 a la 9 
+		// en realidad el divisoir de frecuencia va a ser un contador 
+		if (rst) begin 
+			counter <= 0;
+			clk_1hz <= 0;
+			
+		end
+		
+		else begin 
+			if (counter == MAX_COUNT) begin
+				counter <= 0;
+				clk_1hz <= 1'b1;
+			end
+			else begin 		
+			
+			// si no hay cuenta maxima counter es el que actua 
+			counter <= counter +1;
+			clk_1hz <=1;
+			end
+		end 
+		end
+	
+	
+	endmodule 
+		
+module divisor_de_frecuencia(
+	input wire clk,
+	input wire rst,
+	input enable,
+	output reg [3:0] count
+	);
+	wire clk_wire;
+
+	divisor_de_frecuencia divider1(
+		.clk(clk),
+		.rst(rst),
+		.clk_1hz(clk_wire)
+	);
+	
+	always @(posedge clk or posedge rst) begin
+		if (rst) begin
+			count <= 0;
+		end
+		else begin
+		if (enable) begin
+			if (count == 15) begin
+				count <= 0;
+			end else begin
+				count <= count + 1;
+			end
+			end
+		end
+	end
+endmodule

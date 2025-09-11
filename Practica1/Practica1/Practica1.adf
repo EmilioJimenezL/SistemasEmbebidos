@@ -26,3 +26,7 @@ UCF=
 [Files.Data]
 .\src\four_bit_adder.v=Verilog Source Code
 .\src\testbench.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
