@@ -1,0 +1,54 @@
+timestamp=1757603347337
+
+[~A]
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/contador_con_div.v=0*26992*27888
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_contador.v=0*17246*17929
+LastVerilogToplevel=tb_contador_con_divisor
+ModifyID=14
+Version=74
+
+[~MFT]
+0=8|0contador_con_div.mgf|27888|16768
+1=8|1contador_con_div.mgf|35576|31543
+3=16|3contador_con_div.mgf|23932|20636
+
+[$root]
+A/$root=22|||1*32804
+BinW64/$root=3*21751
+SLP=3*21866
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92167d5c67e64a05af7500b61edd0e4eef8f
+
+[contador_ascendente]
+A/contador_ascendente=22|../src/contador_con_div.v|25|1*34449
+BinW64/contador_ascendente=3*22920
+R=../src/contador_con_div.v|25
+SLP=3*23494
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|95ad6e3973b0ba7458a4d1081993de8124d82c46e8e601bef0f320f43c625faaf76e352634f3d14d6f7e256f075854df
+
+[contador_con_divisor]
+A/contador_con_divisor=22|../src/contador_con_div.v|41|1*35576
+BinW64/contador_con_divisor=3*23802
+R=../src/contador_con_div.v|41
+SLP=3*23932
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b707f05ce92ecac4a2bd804735791b4b3c5446c776e92685f157ba9b3b04311fed06d56c6d1339e3f19e06b90364c335
+
+[freq_div]
+A/freq_div=22|../src/contador_con_div.v|1|1*33178
+BinW64/freq_div=3*21934
+R=../src/contador_con_div.v|1
+SLP=3*22557
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7da0e1daae1c9e0ec68026e67a2a0d82e08d679eaf1bc9de9439630905b37e5faf88cece3885b4dfa616603b979e1938
+
+[tb_contador_con_divisor]
+A/tb_contador_con_divisor=22|../src/tb_contador.v|1|1*19402
+BinW64/tb_contador_con_divisor=3*13631
+R=../src/tb_contador.v|1
+SLP=3*14363
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3636f602e246a05df07cd814a1333a5af61434da1d0e3f0aebf1995726c99f13c7e66e01d5202c618e403e49cd6c1012
+
+[~U]
+$root=12|0*26030|
+contador_ascendente=12|0*26485|
+contador_con_divisor=12|0*26726|
+freq_div=12|0*26244|
+tb_contador_con_divisor=12|0*17053||0x10
