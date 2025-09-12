@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+contador_con_div=.\contador_con_div\contador_con_div.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+contador_con_div=1

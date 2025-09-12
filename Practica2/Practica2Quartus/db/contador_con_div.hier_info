@@ -1,0 +1,87 @@
+|contador_con_div
+clk => clk.IN1
+rst => rst.IN2
+en => en.IN1
+count[0] <= contador_ascendente:contador1.count
+count[1] <= contador_ascendente:contador1.count
+count[2] <= contador_ascendente:contador1.count
+count[3] <= contador_ascendente:contador1.count
+
+
+|contador_con_div|freq_div:div1
+clk => clk_1hz~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+rst => clk_1hz~reg0.ACLR
+rst => counter[0].ACLR
+rst => counter[1].ACLR
+rst => counter[2].ACLR
+rst => counter[3].ACLR
+rst => counter[4].ACLR
+rst => counter[5].ACLR
+rst => counter[6].ACLR
+rst => counter[7].ACLR
+rst => counter[8].ACLR
+rst => counter[9].ACLR
+rst => counter[10].ACLR
+rst => counter[11].ACLR
+rst => counter[12].ACLR
+rst => counter[13].ACLR
+rst => counter[14].ACLR
+rst => counter[15].ACLR
+rst => counter[16].ACLR
+rst => counter[17].ACLR
+rst => counter[18].ACLR
+rst => counter[19].ACLR
+rst => counter[20].ACLR
+rst => counter[21].ACLR
+rst => counter[22].ACLR
+rst => counter[23].ACLR
+rst => counter[24].ACLR
+rst => counter[25].ACLR
+clk_1hz <= clk_1hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_con_div|contador_ascendente:contador1
+clk => count[0]~reg0.CLK
+clk => count[1]~reg0.CLK
+clk => count[2]~reg0.CLK
+clk => count[3]~reg0.CLK
+rst => count[0]~reg0.ACLR
+rst => count[1]~reg0.ACLR
+rst => count[2]~reg0.ACLR
+rst => count[3]~reg0.ACLR
+en => count[3]~reg0.ENA
+en => count[2]~reg0.ENA
+en => count[1]~reg0.ENA
+en => count[0]~reg0.ENA
+count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
