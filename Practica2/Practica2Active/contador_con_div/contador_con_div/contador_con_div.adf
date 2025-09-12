@@ -22,3 +22,7 @@ FAMILY=
 [Files.Data]
 .\src\contador_con_div.v=Verilog Source Code
 .\src\tb_contador.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

@@ -5,7 +5,7 @@ module freq_div (
 );
     // 26 bits are enough to count to 50 million (2^26 = 67,108,864)
     reg [25:0] counter;		  
-	parameter MAX_COUNT = 49_999;
+	parameter MAX_COUNT = 49_999_999;
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin
@@ -14,7 +14,7 @@ module freq_div (
         end else begin
             if (counter == MAX_COUNT) begin
                 counter <= 0;
-                clk_1hz <= ~clk_1hz; // Toggle output every 50M cycles ? 1 Hz
+                clk_1hz <= ~clk_1hz; // Toggle output every 50M cycles ? 1ï¿½Hz
             end else begin
                 counter <= counter + 1;
             end
@@ -38,7 +38,7 @@ end
 
 endmodule
 
-module contador_con_divisor(
+module contador_con_div(
 	input wire clk,
 	input wire rst,
 	input wire en,

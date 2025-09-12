@@ -414,3 +414,6 @@ run
 endsim
 # KERNEL: stopped at time: 5423045 ps
 # VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k17 -work contador_con_div $dsn/src/contador_con_div.v
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
