@@ -60,4 +60,32 @@ module contador_con_div(
 	.count(count)
 	); 
 	
+endmodule  
+
+module binary_to_hex_cathode_comun (
+    input wire A, B, C, D,
+    output wire a, b, c, d, e, f, g
+);
+
+// Segmento a
+assign a = (~A & ~B) | (~A & D) | (~A & C) | (B & C) | (A & ~D) | (A & ~B & ~C);
+
+// Segmento b
+assign b = (~A & ~C & ~D) | (~A & ~B) | (~A & C & D) | (~B & ~D) | (A & ~C & D);
+
+// Segmento c
+assign c = ~A & ((~C & ~D) | (C & D)) | ((A & ~B) | (~A & B));
+
+// Segmento d
+assign d = (~A & ~B & ~D) | (~A & ~B & C) | (B & ~C & D);
+
+// Segmento e
+assign e = (~B & ~D) | (A & B) | (C & ~D) | (A & C);
+
+// Segmento f
+assign f = (~C & ~D) | (~A & B & ~C) | (A & ~B) | (B & C & ~D) | (A & C);
+
+// Segmento g
+assign g = (~A & B & ~C) | (~A & ~B & C) | (A & ~B) | (C & ~D) | (A & D);
+
 endmodule

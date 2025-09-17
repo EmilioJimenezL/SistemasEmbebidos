@@ -1,29 +1,43 @@
-timestamp=1757603347337
+timestamp=1758133643723
 
 [~A]
-D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/contador_con_div.v=0*26992*27888
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/contador_con_div.v=0*29794*30979
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_contador.v=0*17246*17929
-LastVerilogToplevel=tb_contador_con_divisor
-ModifyID=14
+LastVerilogToplevel=binary_to_hex_cathode_comun
+ModifyID=15
 Version=74
 
 [~MFT]
-0=8|0contador_con_div.mgf|27888|16768
-1=8|1contador_con_div.mgf|35576|31543
-3=16|3contador_con_div.mgf|23932|20636
+0=9|0contador_con_div.mgf|30979|18297
+1=8|1contador_con_div.mgf|40928|34315
+3=16|3contador_con_div.mgf|27481|22687
 
 [$root]
-A/$root=22|||1*32804
-BinW64/$root=3*21751
-SLP=3*21866
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92167d5c67e64a05af7500b61edd0e4eef8f
+A/$root=22|||1*36847
+BinW64/$root=3*24086
+SLP=3*24201
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216a854cec744ffdabcc609ca4488d1a947
+
+[binary_to_hex_cathode_comun]
+A/binary_to_hex_cathode_comun=22|../src/contador_con_div.v|65|1*40928
+BinW64/binary_to_hex_cathode_comun=3*26409
+R=../src/contador_con_div.v|65
+SLP=3*27481
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0c73e23661195c2fe309ebe308a76112f292d212acc089712a0777c9ae994c41de0878e2339d6632d49d4dfcf0a3213272ac65ac8850cb7b06fcde83896a2d3b
 
 [contador_ascendente]
-A/contador_ascendente=22|../src/contador_con_div.v|25|1*34449
-BinW64/contador_ascendente=3*22920
+A/contador_ascendente=22|../src/contador_con_div.v|25|1*38546
+BinW64/contador_ascendente=3*25255
 R=../src/contador_con_div.v|25
-SLP=3*23494
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|95ad6e3973b0ba7458a4d1081993de8124d82c46e8e601bef0f320f43c625faaf76e352634f3d14d6f7e256f075854df
+SLP=3*25829
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|95ad6e3973b0ba7458a4d1081993de8124d82c46e8e601bef0f320f43c625faa77b61492e5818b69721f6bf3437e124e
+
+[contador_con_div]
+A/contador_con_div=22|../src/contador_con_div.v|41|1*39673
+BinW64/contador_con_div=3*26137
+R=../src/contador_con_div.v|41
+SLP=3*26263
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b707f05ce92ecac4a2bd804735791b4ba8c79c90e4b759f24bcde822c084d51225bb479cb1f2a6a19f34fa1225dc4009
 
 [contador_con_divisor]
 A/contador_con_divisor=22|../src/contador_con_div.v|41|1*35576
@@ -33,11 +47,11 @@ SLP=3*23932
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|b707f05ce92ecac4a2bd804735791b4b3c5446c776e92685f157ba9b3b04311fed06d56c6d1339e3f19e06b90364c335
 
 [freq_div]
-A/freq_div=22|../src/contador_con_div.v|1|1*33178
-BinW64/freq_div=3*21934
+A/freq_div=22|../src/contador_con_div.v|1|1*37269
+BinW64/freq_div=3*24269
 R=../src/contador_con_div.v|1
-SLP=3*22557
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7da0e1daae1c9e0ec68026e67a2a0d82e08d679eaf1bc9de9439630905b37e5faf88cece3885b4dfa616603b979e1938
+SLP=3*24892
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7da0e1daae1c9e0ec68026e67a2a0d82e08d679eaf1bc9de9439630905b37e5fff9bbbd53b5ecb409f1c0d29235cd2e2
 
 [tb_contador_con_divisor]
 A/tb_contador_con_divisor=22|../src/tb_contador.v|1|1*19402
@@ -47,8 +61,10 @@ SLP=3*14363
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3636f602e246a05df07cd814a1333a5af61434da1d0e3f0aebf1995726c99f13c7e66e01d5202c618e403e49cd6c1012
 
 [~U]
-$root=12|0*26030|
-contador_ascendente=12|0*26485|
+$root=12|0*28521|
+binary_to_hex_cathode_comun=12|0*29524||0x10
+contador_ascendente=12|0*29024|
+contador_con_div=12|0*29265||0x10
 contador_con_divisor=12|0*26726|
-freq_div=12|0*26244|
+freq_div=12|0*28783|
 tb_contador_con_divisor=12|0*17053||0x10
