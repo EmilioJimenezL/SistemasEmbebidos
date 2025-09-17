@@ -2,8 +2,8 @@
 Built-in symbols=0
 contador_con_div=0
 [COMPILESTATUS|.\src\contador_con_div.v]
-FileTimeLow=3047482936
-FileTimeHigh=31205376
+FileTimeLow=3962162555
+FileTimeHigh=31205380
 Status=Compiled
 [COMPILESTATUS|.\src\tb_contador.v]
 FileTimeLow=1180803929
