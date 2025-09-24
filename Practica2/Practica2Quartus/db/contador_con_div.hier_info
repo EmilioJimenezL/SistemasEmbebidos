@@ -2,10 +2,14 @@
 clk => clk.IN1
 rst => rst.IN2
 en => en.IN1
-count[0] <= contador_ascendente:contador1.count
-count[1] <= contador_ascendente:contador1.count
-count[2] <= contador_ascendente:contador1.count
-count[3] <= contador_ascendente:contador1.count
+control => control.IN1
+seg[0] << binary_to_hex_decoder:decoder.hex_out
+seg[1] << binary_to_hex_decoder:decoder.hex_out
+seg[2] << binary_to_hex_decoder:decoder.hex_out
+seg[3] << binary_to_hex_decoder:decoder.hex_out
+seg[4] << binary_to_hex_decoder:decoder.hex_out
+seg[5] << binary_to_hex_decoder:decoder.hex_out
+seg[6] << binary_to_hex_decoder:decoder.hex_out
 
 
 |contador_con_div|freq_div:div1
@@ -75,13 +79,27 @@ rst => count[0]~reg0.ACLR
 rst => count[1]~reg0.ACLR
 rst => count[2]~reg0.ACLR
 rst => count[3]~reg0.ACLR
-en => count[3]~reg0.ENA
-en => count[2]~reg0.ENA
-en => count[1]~reg0.ENA
-en => count[0]~reg0.ENA
+en => always0.IN0
+en => always0.IN0
+control => always0.IN1
+control => always0.IN1
 count[0] <= count[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[1] <= count[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[2] <= count[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 count[3] <= count[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|contador_con_div|binary_to_hex_decoder:decoder
+binary_in[0] => Decoder0.IN3
+binary_in[1] => Decoder0.IN2
+binary_in[2] => Decoder0.IN1
+binary_in[3] => Decoder0.IN0
+hex_out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 

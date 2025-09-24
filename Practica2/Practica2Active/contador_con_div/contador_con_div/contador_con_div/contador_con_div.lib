@@ -1,22 +1,32 @@
-timestamp=1758135452494
+timestamp=1758569826493
 
 [~A]
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/adder2_nbits.v=0*41139*41775
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/contador_con_div.v=0*36696*38185
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/substractor2_nbits.v=0*46750*47392
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_adder2_nbits.v=0*48550*49317
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_contador.v=0*17246*17929
-LastVerilogToplevel=contador_con_div
-ModifyID=17
+LastVerilogToplevel=tb_adder2_nbits
+ModifyID=23
 Version=74
 
 [~MFT]
-0=10|0contador_con_div.mgf|38185|22173
-1=12|1contador_con_div.mgf|54389|46510
-3=24|3contador_con_div.mgf|39777|32728
+0=6|0contador_con_div.mgf|49317|26252
+1=4|1contador_con_div.mgf|66254|53787
+3=8|3contador_con_div.mgf|51503|39622
 
 [$root]
-A/$root=22|||1*49042
-BinW64/$root=3*34127
-SLP=3*34242
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92167e9d349db7f25256a245a37da595d308
+A/$root=22|||1*65816
+BinW64/$root=3*49794
+SLP=3*49909
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92165ff0dfea2aa559d60998156608921932
+
+[adder2_nbits]
+A/adder2_nbits=22|../src/adder2_nbits.v|1|1*58278
+BinW64/adder2_nbits=3*41868
+R=../src/adder2_nbits.v|1
+SLP=3*43105
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|6709d9a23a23f54fa28ae1f1a25fdd0c085c7fef1c17f4f1e6851cec720c381b36f6b137d8a36afb597ef48fb3554dcf
 
 [binary_to_hex_cathode_comun]
 A/binary_to_hex_cathode_comun=22|../src/contador_con_div.v|41|1*51868
@@ -60,6 +70,20 @@ R=../src/contador_con_div.v|1
 SLP=3*34933
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7da0e1daae1c9e0ec68026e67a2a0d82e08d679eaf1bc9de9439630905b37e5fe9ce3e6cc42fc308135a3f845dbbdd9b
 
+[substractor2_nbits]
+A/substractor2_nbits=22|../src/substractor2_nbits.v|1|1*64273
+BinW64/substractor2_nbits=3*48213
+R=../src/substractor2_nbits.v|1
+SLP=3*49456
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|6fdc523088c8753bc1eb18c79b8f12e3cf3aada2203db3b94b5d6dacedb246834f848a5c1fa608111018a15c779b5dbb
+
+[tb_adder2_nbits]
+A/tb_adder2_nbits=22|../src/tb_adder2_nbits.v|2|1*66254
+BinW64/tb_adder2_nbits=3*49977
+R=../src/tb_adder2_nbits.v|2
+SLP=3*51503
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|48d8a5afe28b3764ba6ae6653cec3d8d2c89ed6b4af88134acadf15fa2ce5f012034c3da2fe8996b6d4968cfff1f6288
+
 [tb_contador_con_divisor]
 A/tb_contador_con_divisor=22|../src/tb_contador.v|1|1*19402
 BinW64/tb_contador_con_divisor=3*13631
@@ -68,11 +92,14 @@ SLP=3*14363
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3636f602e246a05df07cd814a1333a5af61434da1d0e3f0aebf1995726c99f13c7e66e01d5202c618e403e49cd6c1012
 
 [~U]
-$root=12|0*35169|
+$root=12|0*48043|
+adder2_nbits=12|0*40889||0x10
 binary_to_hex_cathode_comun=12|0*35913||0x10
 binary_to_hex_decoder=12|0*36183|
 contador_ascendente=12|0*35672|
 contador_con_div=12|0*36409||0x10
 contador_con_divisor=12|0*26726|
 freq_div=12|0*35431|
+substractor2_nbits=12|0*46490||0x10
+tb_adder2_nbits=12|0*48337||0x10
 tb_contador_con_divisor=12|0*17053||0x10

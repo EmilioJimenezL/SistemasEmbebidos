@@ -19,9 +19,15 @@ FAMILY=
 [Files]
 /contador_con_div.v=-1
 /tb_contador.v=-1
+/adder2_nbits.v=-1
+/tb_adder2_nbits.v=-1
+/substractor2_nbits.v=-1
 [Files.Data]
 .\src\contador_con_div.v=Verilog Source Code
 .\src\tb_contador.v=Verilog Source Code
+.\src\adder2_nbits.v=Verilog Source Code
+.\src\tb_adder2_nbits.v=Verilog Source Code
+.\src\substractor2_nbits.v=Verilog Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel

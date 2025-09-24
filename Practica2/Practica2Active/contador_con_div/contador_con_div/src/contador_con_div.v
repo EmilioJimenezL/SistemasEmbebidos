@@ -14,7 +14,7 @@ module freq_div (
         end else begin
             if (counter == MAX_COUNT) begin
                 counter <= 0;
-                clk_1hz <= ~clk_1hz; // Toggle output every 50M cycles ? 1�Hz
+                clk_1hz <= ~clk_1hz; // Toggle output every 50M cycles ? 1Hz
             end else begin
                 counter <= counter + 1;
             end
@@ -26,14 +26,18 @@ module contador_ascendente (
     input clk,
     input rst,
     input en,
+	 input control,
     output reg [3:0] count
 );
 
 always @ (posedge clk or posedge rst) begin
     if (rst)
         count <= 4'b0000;
-    else if (en)
+    else if (en && control) begin
         count <= count + 1'b1;
+	 end else if (en && !control) begin
+		count <= count - 1'b1;
+		end
 end
 
 endmodule
@@ -99,10 +103,10 @@ module contador_con_div(
 	input wire clk,
 	input wire rst,
 	input wire en,
-	output wire [6:0] seg,
-	output wire [3:0] count
+	input wire control,
+	output wire [6:0] seg
 	);
-	
+	wire [3:0] count;
 	wire clk_1hz;
 	
 	freq_div div1( 
@@ -115,6 +119,7 @@ module contador_con_div(
 	.clk(clk_1hz),
 	.rst(rst),
 	.en(en),
+	.control(control),
 	.count(count)
 	);
 	
