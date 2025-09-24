@@ -1,2 +1,5 @@
 i<>.\src\contador_con_div.v
 i<>.\src\tb_contador.v
+i<>.\src\adder2_nbits.v
+i<>.\src\tb_adder2_nbits.v
+i<>.\src\substractor2_nbits.v

@@ -1,16 +1,14 @@
-Active-HDL 15.0.261.9132 2025-09-11 09:07:57
+Active-HDL 15.0.261.9132 2025-09-22 13:37:20
 
 Elaboration top modules:
-Verilog Module                tb_contador_con_divisor
+Verilog Module                tb_adder2_nbits
 
 
 ----------------------------------------------------------------------------------------------------
 Verilog Module          | Library          | Info | Compiler Version          | Compilation Options
 ----------------------------------------------------------------------------------------------------
-tb_contador_con_divisor | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-contador_con_divisor    | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-freq_div                | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-contador_ascendente     | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+tb_adder2_nbits         | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+substractor2_nbits      | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 ----------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------
@@ -20,7 +18,7 @@ contador_con_div        | None
 ----------------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O5 +access +r +m+tb_contador_con_divisor tb_contador_con_divisor
+Simulation Options: asim -O5 +access +r +m+tb_adder2_nbits tb_adder2_nbits
 
 
 The performance of simulation is reduced. Version Student Edition
