@@ -1,0 +1,19 @@
+# Design: Design polinomial_aprox already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve -msg 5 -sv2k17 -work polinomial_aprox $dsn/src/adder2_comb.v
+# Unit top modules: adder2_comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work polinomial_aprox $dsn/src/multiplier2_comb.v
+# Unit top modules: adder2_comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work polinomial_aprox $dsn/src/multiplier2_comb.v
+# Error: VCP2000 multiplier2_comb.v : (12, 10): Syntax error. Unexpected token: endmodule[_ENDMODULE].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work polinomial_aprox $dsn/src/multiplier2_comb.v
+# Unit top modules: adder2_comb.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done

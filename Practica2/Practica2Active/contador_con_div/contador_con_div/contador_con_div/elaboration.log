@@ -1,14 +1,13 @@
-Active-HDL 15.0.261.9132 2025-09-22 13:37:20
+Active-HDL 15.0.261.9132 2025-09-26 23:10:08
 
 Elaboration top modules:
-Verilog Module                tb_adder2_nbits
+Verilog Module                multiplier
 
 
 ----------------------------------------------------------------------------------------------------
 Verilog Module          | Library          | Info | Compiler Version          | Compilation Options
 ----------------------------------------------------------------------------------------------------
-tb_adder2_nbits         | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
-substractor2_nbits      | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+multiplier              | contador_con_div |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 ----------------------------------------------------------------------------------------------------
 
 ----------------------------------------------------------------------------------------------------
@@ -16,9 +15,3 @@ Library                 | Comment
 ----------------------------------------------------------------------------------------------------
 contador_con_div        | None
 ----------------------------------------------------------------------------------------------------
-
-
-Simulation Options: asim -O5 +access +r +m+tb_adder2_nbits tb_adder2_nbits
-
-
-The performance of simulation is reduced. Version Student Edition
