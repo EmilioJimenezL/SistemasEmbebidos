@@ -1,0 +1,9 @@
+.\src\adder.v
+.\src\counter.v
+.\src\lorenz_oscillator.v
+.\src\multiplier.v
+.\src\register.v
+.\src\restador.v
+.\src\scm_0_01.v
+.\src\scm_2_66.v
+.\src\scm_10.v

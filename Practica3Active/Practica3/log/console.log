@@ -1,0 +1,90 @@
+alog -O2 -sve -msg 5 -sv2k17 -work Practica3 $dsn/src/adder.v
+# Unit top modules: adder.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O2 +access +r +m+adder adder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5374 kB (elbread=427 elab2=4810 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Practica3Active\Practica3\src\wave.asdb
+#  09:53 p. m., martes, 7 de octubre de 2025
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/wave.asdb'.
+run
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+run 500 ns
+# KERNEL: stopped at time: 1 us
+endsim
+# VSIM: Simulation has finished.
+alog -O2 -sve -msg 5 -sv2k17 -work Practica3 $dsn/src/restador.v
+# Unit top modules: restador.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O2 +access +r +m+adder adder
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5374 kB (elbread=427 elab2=4810 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Practica3Active\Practica3\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  10:01 p. m., martes, 7 de octubre de 2025
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O2 +access +r +m+restador restador
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5374 kB (elbread=427 elab2=4810 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Practica3Active\Practica3\src\wave.asdb
+#  10:01 p. m., martes, 7 de octubre de 2025
+#  Simulation has been initialized
+# VSIM: 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/wave.asdb'.
+run 500 ns
+# KERNEL: stopped at time: 500 ns
+endsim
+# VSIM: Simulation has finished.

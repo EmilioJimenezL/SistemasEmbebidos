@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+practica3=.\Practica3.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+[Expand]
+practica3=1
