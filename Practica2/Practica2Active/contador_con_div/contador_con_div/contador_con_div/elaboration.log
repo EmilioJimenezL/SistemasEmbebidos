@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2025-09-26 23:10:08
+Active-HDL 15.0.261.9132 2025-09-29 12:27:12
 
 Elaboration top modules:
 Verilog Module                multiplier
@@ -15,3 +15,9 @@ Library                 | Comment
 ----------------------------------------------------------------------------------------------------
 contador_con_div        | None
 ----------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O2 +access +r +m+multiplier multiplier
+
+
+The performance of simulation is reduced. Version Student Edition

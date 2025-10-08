@@ -1,0 +1,11 @@
+[Version]
+Version=15.0
+[Designs]
+polinomialaprox=.\polinomialAprox\polinomialAprox.adf
+[Browser]
+sort=order
+mode=desc
+[Order]
+order=1
+[Expand]
+polinomialaprox=1

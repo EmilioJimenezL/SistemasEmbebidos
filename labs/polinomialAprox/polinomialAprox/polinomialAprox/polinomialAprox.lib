@@ -1,0 +1,83 @@
+timestamp=1759174130216
+
+[~A]
+LastVerilogToplevel=aproximador_polinomial
+ModifyID=28
+Version=74
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/adder2_comb.v=0*34430*34930
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/aproximador_polinomial.v=0*49092*49875
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/multiplier2.v=0*47397*47929
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/scm_0_0416.v=0*5360*6131
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/scm_0_1666.v=0*365*1104
+d:/Tareas/Otoño 25/Sistemas Embebidos/labs/polinomialAprox/polinomialAprox/src/scm_0_5.v=0*2066*2594
+
+[~MFT]
+0=6|0polinomialAprox.mgf|49875|28648
+1=4|1polinomialAprox.mgf|81012|67628
+3=8|3polinomialAprox.mgf|38840|29769
+
+[$root]
+A/$root=22|||1*80606
+BinW64/$root=3*38151
+SLP=3*38266
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92169e350e29fb3d1b5999f178c1005b29b0
+
+[adder2_comb]
+A/adder2_comb=22|../src/adder2_comb.v|1|1*57592
+BinW64/adder2_comb=3*27698
+R=../src/adder2_comb.v|1
+SLP=3*28644
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|562e43e95cf837199b24eddcfd8f939064642f49e3786febbe391c2e7d4a80c0d409d6bad6d1e49dec15af73fc03896f
+
+[aproximador_polinomial]
+A/aproximador_polinomial=22|../src/aproximador_polinomial.v|1|1*81012
+BinW64/aproximador_polinomial=3*38334
+R=../src/aproximador_polinomial.v|1
+SLP=3*38840
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d4e66a10c13dfb8497cd4f0c4d4bd903229598bde36f12580af7c60d73aa3ce493d6ce6cad615b94ad3ca88f1771aae2
+
+[multiplier2]
+A/multiplier2=22|../src/multiplier2.v|1|1*79122
+BinW64/multiplier2=3*36649
+R=../src/multiplier2.v|1
+SLP=3*37886
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|daa2785b8d3d21a554a155d05bd18bad231a2aae24eed29c5d40da77da020c351c4b916e96f726bb7412c050b207aa77
+
+[multiplier_block]
+A/multiplier_block=22|../src/scm_0_0416.v|1|1*5316
+BinW64/multiplier_block=3*2919
+R=../src/scm_0_0416.v|1
+SLP=3*4029
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f4cec3ea2aed00e206541438e0af778fee98e4c31986e062e6278f0d822436d5d644eddada415580a5c21f5f9777a48a
+
+[scm_0_0416]
+A/scm_0_0416=22|../src/scm_0_0416.v|1|1*8798
+BinW64/scm_0_0416=3*4798
+R=../src/scm_0_0416.v|1
+SLP=3*5902
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d3725991b562591d4a6150d5568b920f98fcb8758e19f00b08e273dce81a9ab7072785c6fb49f4884a5e6f950a988010
+
+[scm_0_1666]
+A/scm_0_1666=22|../src/scm_0_1666.v|1|1*374
+BinW64/scm_0_1666=3*183
+R=../src/scm_0_1666.v|1
+SLP=3*1239
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|84c30f7b5ddfa59e475c0981dc83fc9bf543e907053ceaf2e08f536b3241d356f10360abc81e64d3c41536e9d411f4cd
+
+[scm_0_5]
+A/scm_0_5=22|../src/scm_0_5.v|1|1*3639
+BinW64/scm_0_5=3*1962
+R=../src/scm_0_5.v|1
+SLP=3*2494
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|a4d70c68d0c85aa400f4767f1ebef9f126527262ddaa47cb266f3a3c4d9b973adf20fa233c7636015c02e5f7e5558eb5
+
+[~U]
+$root=12|0*48518|
+adder2_comb=12|0*34201|
+aproximador_polinomial=12|0*48764||0x10
+multiplier2=12|0*47168|
+multiplier_block=12|0*3377||0x10
+scm_0_0416=12|0*5161||0x10
+scm_0_1666=12|0*166||0x10
+scm_0_5=12|0*1874||0x10
+

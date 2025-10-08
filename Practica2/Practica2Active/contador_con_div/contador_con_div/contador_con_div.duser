@@ -2,7 +2,7 @@
 <design-settings>
 	<plugins>
 		<Aldec.Stimuli.1>
-			<hierarchy activeStimuliSetName="StimuliSet4">
+			<hierarchy activeStimuliSetName="StimuliSet5">
 				<stimuliSet name="StimuliSet1">
 					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
 						<stimulus_data>
@@ -81,6 +81,28 @@
 					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
 						<stimulus_data>
 							<value value="00000000100100000000000000000000"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/multiplier/b"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet5">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="00000111111111001011000001010011"/>
+							<radix value="default"/>
+							<cancel_time value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/multiplier/a"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="value">
+						<stimulus_data>
+							<value value="00000111111111001011000001010011"/>
 							<radix value="default"/>
 							<cancel_time value="0fs" enabled="false"/>
 						</stimulus_data>

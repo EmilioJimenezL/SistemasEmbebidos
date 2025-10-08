@@ -1,26 +1,26 @@
-timestamp=1758740571521
+timestamp=1759170425749
 
 [~A]
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/adder2_nbits.v=0*41139*41775
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/contador_con_div.v=0*36696*38185
-D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/multiplier.v=0*59124*59694
+D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/multiplier.v=0*66014*66584
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/substractor2_nbits.v=0*46750*47392
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_adder2_nbits.v=0*48550*49317
 D:/Tareas/Otoño 25/Sistemas Embebidos/Practica2/Practica2Active/contador_con_div/contador_con_div/src/tb_contador.v=0*17246*17929
 LastVerilogToplevel=multiplier
-ModifyID=29
+ModifyID=33
 Version=74
 
 [~MFT]
-0=6|0contador_con_div.mgf|59694|32237
-1=4|1contador_con_div.mgf|77534|63474
-3=8|3contador_con_div.mgf|62681|48834
+0=6|0contador_con_div.mgf|66584|37025
+1=4|1contador_con_div.mgf|84930|70870
+3=8|3contador_con_div.mgf|69635|55930
 
 [$root]
-A/$root=22|||1*77096
-BinW64/$root=3*61120
-SLP=3*61235
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216830f7613a7068d11d5331f88de689c23
+A/$root=22|||1*84492
+BinW64/$root=3*68216
+SLP=3*68331
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216aa292bed8e666fb6e01c72098c357efd
 
 [adder2_nbits]
 A/adder2_nbits=22|../src/adder2_nbits.v|1|1*58278
@@ -72,11 +72,11 @@ SLP=3*34933
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7da0e1daae1c9e0ec68026e67a2a0d82e08d679eaf1bc9de9439630905b37e5fe9ce3e6cc42fc308135a3f845dbbdd9b
 
 [multiplier]
-A/multiplier=22|../src/multiplier.v|1|1*77534
-BinW64/multiplier=3*61303
+A/multiplier=22|../src/multiplier.v|1|1*84930
+BinW64/multiplier=3*68399
 R=../src/multiplier.v|1
-SLP=3*62681
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ae76990bd7f3693aa5cae06a1fb118e3111672bef854fb9edfeeceb9b633f760a36da2a6c7bf0a1558c19b323be5086e
+SLP=3*69635
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ae76990bd7f3693aa5cae06a1fb118e3111672bef854fb9edfeeceb9b633f7607f7828f42ac2ad8a3677f1a40eb8f921
 
 [substractor2_nbits]
 A/substractor2_nbits=22|../src/substractor2_nbits.v|1|1*64273
@@ -100,7 +100,7 @@ SLP=3*14363
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3636f602e246a05df07cd814a1333a5af61434da1d0e3f0aebf1995726c99f13c7e66e01d5202c618e403e49cd6c1012
 
 [~U]
-$root=12|0*58595|
+$root=12|0*65492|
 adder2_nbits=12|0*40889||0x10
 binary_to_hex_cathode_comun=12|0*35913||0x10
 binary_to_hex_decoder=12|0*36183|
@@ -108,7 +108,8 @@ contador_ascendente=12|0*35672|
 contador_con_div=12|0*36409||0x10
 contador_con_divisor=12|0*26726|
 freq_div=12|0*35431|
-multiplier=12|0*58889||0x10
+multiplier=12|0*65786||0x10
 substractor2_nbits=12|0*46490||0x10
 tb_adder2_nbits=12|0*48337||0x10
 tb_contador_con_divisor=12|0*17053||0x10
+

@@ -1,0 +1,28 @@
+Active-HDL 15.0.261.9132 2025-09-29 13:28:55
+
+Elaboration top modules:
+Verilog Module                aproximador_polinomial
+
+
+---------------------------------------------------------------------------------------------------
+Verilog Module          | Library         | Info | Compiler Version          | Compilation Options
+---------------------------------------------------------------------------------------------------
+aproximador_polinomial  | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+adder2_comb             | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+multiplier2             | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_0_5                 | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_0_1666              | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_0_0416              | polinomialAprox |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+---------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Library                 | Comment
+---------------------------------------------------------------------------------------------------
+polinomialAprox         | None
+---------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O2 +access +r +m+aproximador_polinomial aproximador_polinomial
+
+
+The performance of simulation is reduced. Version Student Edition

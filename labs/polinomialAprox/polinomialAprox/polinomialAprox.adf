@@ -1,0 +1,36 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=polinomialAprox
+[Library]
+polinomialAprox=.\polinomialAprox\polinomialAprox.lib
+[$LibMap$]
+polinomialAprox=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/scm_0_5.v=-1
+/scm_0_1666.v=-1
+/scm_0_0416.v=-1
+/aproximador_polinomial.v=-1
+/adder2_comb.v=-1
+/multiplier2.v=-1
+[Files.Data]
+.\src\scm_0_5.v=Verilog Source Code
+.\src\scm_0_1666.v=Verilog Source Code
+.\src\scm_0_0416.v=Verilog Source Code
+.\src\aproximador_polinomial.v=Verilog Source Code
+.\src\adder2_comb.v=Verilog Source Code
+.\src\multiplier2.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
