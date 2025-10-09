@@ -7,8 +7,8 @@ module counter #(
 	
 	integer count; // variable de la cuenta 
 	
-	always @(posedge clk or negedge rst ) begin 
-		if (!rst) begin
+	always @(posedge clk or posedge rst) begin 
+		if (rst) begin
 			count = 0;
 			en = 1'b0;
 		end else begin 

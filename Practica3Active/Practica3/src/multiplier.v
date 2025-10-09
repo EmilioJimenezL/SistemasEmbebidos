@@ -10,13 +10,13 @@ module multiplier #( // Parámetros: el numero de bits
 	);
 	
 	reg [n+n-1:0] aux;
-	always @(posedge clk or negedge rst)begin 
-		if (!rst) begin	  
+	always @(posedge clk or posedge rst)begin 
+		if (rst) begin	  
 			aux = {n{1'b0}}; // ponlo igual a cero
 			out1 = {n{1'b0}} ;	 
 			
 		end else begin
-		aux = $signed(a) + $signed(b); 
+		aux = $signed(a) * $signed(b); 
 		out1 = aux[51:20];
 	end	
 end

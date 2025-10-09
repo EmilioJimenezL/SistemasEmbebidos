@@ -7,8 +7,8 @@ module adder #( // Parámetros: el numero de bits
 	output reg [n-1:0] out1
 	);
 	
-	always @(posedge clk or negedge rst)begin 
-		if (!rst) begin
+	always @(posedge clk or posedge rst) begin 
+		if (rst) begin
 			out1 = {n{1'b0}} ;
 		end else begin
 		out1= $signed(a) + $signed(b); 

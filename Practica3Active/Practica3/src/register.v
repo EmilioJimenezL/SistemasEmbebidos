@@ -13,8 +13,8 @@ module register #(
 );
 
     // Lógica secuencial con reset asíncrono
-    always @(posedge clk or negedge rst) begin
-        if (!rst)
+    always @(posedge clk or posedge rst) begin
+        if (rst)
             q <= INIT_VAL;  // Carga valor inicial
         else if (en)
             q <= d;         // Carga nuevo dato si enable está activo

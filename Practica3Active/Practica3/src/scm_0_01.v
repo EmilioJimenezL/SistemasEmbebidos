@@ -28,8 +28,8 @@ module scm_0_01 (
     w10485;
 	
 	
-	always @(posedge clk or negedge rst)begin 
-		if (!rst) begin
+	always @(posedge clk or posedge rst)begin 
+		if (rst) begin
 			Y = 32'b0;
 		end else begin 
 		  assign w1 = X;

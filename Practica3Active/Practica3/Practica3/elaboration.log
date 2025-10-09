@@ -1,13 +1,21 @@
-Active-HDL 15.0.261.9132 2025-10-07 22:01:32
+Active-HDL 15.0.261.9132 2025-10-08 21:52:34
 
 Elaboration top modules:
-Verilog Module                restador
+Verilog Module                lorenz_osc
 
 
 ---------------------------------------------------------------------------------------------
 Verilog Module          | Library   | Info | Compiler Version          | Compilation Options
 ---------------------------------------------------------------------------------------------
+lorenz_osc              | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 restador                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_10                  | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_0_01                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+adder                   | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+multiplier              | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+scm_2_66                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+counter                 | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+register                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
@@ -17,7 +25,7 @@ practica3               | None
 ---------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O2 +access +r +m+restador restador
+Simulation Options: asim -O2 +access +r +m+lorenz_osc lorenz_osc
 
 
 The performance of simulation is reduced. Version Student Edition

@@ -1,38 +1,120 @@
-timestamp=1759896056803
+timestamp=1759981798334
 
 [~A]
-D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v=0*402*964
-D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/restador.v=0*1944*2509
-LastVerilogToplevel=restador
-ModifyID=2
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v=0*12935*13497
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v_counter.v_multiplier.v_register.v_restador.v_scm_0_01.v_scm_2_66.v_scm_10.v_lorenz_oscillator.v=0*37947*40398
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v_counter.v_multiplier.v_register.v_restador.v_scm_0_01.v_scm_2_66.v_scm_10.v_lorenz_oscillator.v_tbs.v=0*61567*64600
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/counter.v=0*16095*16659
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v=0*66006*67205
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v=0*28642*29257
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/register.v=0*19355*19936
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/restador.v=0*14525*15090
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_0_01.v=0*20943*21684
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_10.v=0*24579*25222
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_2_66.v=0*22691*23576
+D:/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/tbs.v=0*43690*44698
+LastVerilogToplevel=lorenz_osc
+ModifyID=23
 Version=74
 
 [~MFT]
-0=4|0Practica3.mgf|2509|0
-1=3|1Practica3.mgf|2190|374
-3=6|3Practica3.mgf|3131|183
+0=6|0Practica3.mgf|67205|23292
+1=4|1Practica3.mgf|201078|179721
+3=8|3Practica3.mgf|143066|122784
 
 [$root]
-A/$root=22|||1*1816
-BinW64/$root=3*1714
-SLP=3*1829
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92161975ca97c024b90e434506eed415d253
+A/$root=22|||1*200672
+BinW64/$root=3*141504
+SLP=3*141619
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c92163123f7a74e6372c184a8795fd115b390
 
 [adder]
-A/adder=22|../src/adder.v|1|1*374
-BinW64/adder=3*183
+A/adder=22|../src/adder.v|1|1*173799
+BinW64/adder=3*121821
 R=../src/adder.v|1
-SLP=3*1413
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|aa2639a8a5a70ec6691b492f142f0ca2ce59d961249244a3fa23989bd7fc0ebd
+SLP=3*123045
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|aa2639a8a5a70ec6691b492f142f0ca214c0a5b0bfc5b752cafc7d644a734d78
+
+[counter]
+A/counter=22|../src/counter.v|1|1*175241
+BinW64/counter=3*123335
+R=../src/counter.v|1
+SLP=3*124019
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ec8a9ceecd40c97da6d5687ce01e262f26527262ddaa47cb266f3a3c4d9b973a8a0c34a0d0925a7618df401ada81c889
+
+[lorenz_osc]
+A/lorenz_osc=22|../src/lorenz_oscillator.v|1|1*201078
+BinW64/lorenz_osc=3*141687
+R=../src/lorenz_oscillator.v|1
+SLP=3*143066
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|dbccd709f71ba30ab9a1a05ec3ff900ef880c6a7b08f33f63db236f25b08df1ea894910adaecd84c65305e9cf917fad4
+
+[multiplier]
+A/multiplier=22|../src/multiplier.v|3|1*176474
+BinW64/multiplier=3*124396
+R=../src/multiplier.v|3
+SLP=3*125978
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ae76990bd7f3693aa5cae06a1fb118e3111672bef854fb9edfeeceb9b633f760f0d078f157feff7e7c4e4e1d2f6b6554
+
+[register]
+A/register=22|../src/register.v|4|1*177995
+BinW64/register=3*126374
+R=../src/register.v|4
+SLP=3*127548
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|5fa1b53f1300c4835386baab9d0c635e1096506f0a00bc334a610cd78bf011dd98e2c67b2b27317ce514dccd4ce8f7bf
+
+[register_tb]
+A/register_tb=22|../src/tbs.v|3|1*197275
+BinW64/register_tb=3*137426
+R=../src/tbs.v|3
+SLP=3*139114
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bcc9430bfe0a3b921a8cbb18635264dc762f7ccb13cebcdd12def2742a1f10215d3a6b4f03c8438137f209b378a441e2
 
 [restador]
-A/restador=22|../src/restador.v|1|1*2190
-BinW64/restador=3*1897
+A/restador=22|../src/restador.v|1|1*179662
+BinW64/restador=3*127804
 R=../src/restador.v|1
-SLP=3*3131
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bec434b7056dab3ab50adc0f912c253ff27dd84861ac60a33bfd953b47c67df92014efc3945d71ac9c085b694a8d49d0
+SLP=3*129031
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|bec434b7056dab3ab50adc0f912c253ff27dd84861ac60a33bfd953b47c67df9c0ee630449966108d9dbe47d1d9885d8
+
+[scm_0_01]
+A/scm_0_01=22|../src/scm_0_01.v|9|1*181122
+BinW64/scm_0_01=3*129334
+R=../src/scm_0_01.v|9
+SLP=3*131054
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|cc290a68772d01d044c9c32bf55a93d0bfbfb9204da7d8ca8e48126f88f8859bc0ee630449966108d9dbe47d1d9885d8
+
+[scm_10]
+A/scm_10=22|../src/scm_10.v|9|1*189099
+BinW64/scm_10=3*134731
+R=../src/scm_10.v|9
+SLP=3*136019
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|de03e8a133a84dec9be2ef6af70b065415e1056c3d3912cb212e4a3f5a677dec
+
+[scm_2_66]
+A/scm_2_66=22|../src/scm_2_66.v|9|1*184448
+BinW64/scm_2_66=3*131662
+R=../src/scm_2_66.v|9
+SLP=3*133939
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|2e88d7ab3051d0400194f6768c6bbc8c58b6c833afad141878591a4e7ae8230d9806919b8b5ff91d4d238508c53d1f96
+
+[tb_counter]
+A/tb_counter=22|../src/tbs.v|64|1*199352
+BinW64/tb_counter=3*139888
+R=../src/tbs.v|64
+SLP=3*140976
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d2ae70d0917df16d32a5b2301d0307f87fe734fb5aac87a5123efa8db6fd7258331798c36ca3e2857d81b8dc7b4a5e31
 
 [~U]
-$root=12|0*1519|
-adder=12|0*166||0x10
-restador=12|0*1701||0x10
+$root=12|0*65369|
+adder=12|0*58925|
+counter=12|0*59161|
+lorenz_osc=12|0*65631||0x10
+multiplier=12|0*59378|
+register=12|0*59625|
+register_tb=12|0*61153||0x10
+restador=12|0*59882|
+scm_0_01=12|0*60125|
+scm_10=12|0*60563|
+scm_2_66=12|0*60344|
+tb_counter=12|0*61375||0x10
