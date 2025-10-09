@@ -1,10 +1,3 @@
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\adder.v|]
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\lorenz_oscillator.v|]
 TemplateId=2
-tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\restador.v|]
-TemplateId=2
-tab=lu
-[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\multiplier.v|]
-TemplateId=2
-ActiveDocument=1
 tab=lu
