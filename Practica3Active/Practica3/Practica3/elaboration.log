@@ -1,13 +1,15 @@
-Active-HDL 15.0.261.9132 2025-10-08 21:52:34
+Active-HDL 15.0.261.9132 2025-10-13 11:48:50
 
 Elaboration top modules:
-Verilog Module                lorenz_osc
+Verilog Module                lorenz_osc_dac
 
 
 ---------------------------------------------------------------------------------------------
 Verilog Module          | Library   | Info | Compiler Version          | Compilation Options
 ---------------------------------------------------------------------------------------------
+lorenz_osc_dac          | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 lorenz_osc              | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+DAC7565                 | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 restador                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 scm_10                  | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 scm_0_01                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
@@ -16,6 +18,11 @@ multiplier              | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv
 scm_2_66                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 counter                 | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 register                | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dacGReg                 | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dacGShifter             | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dacGCount               | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dacGTimer               | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dacFSM                  | practica3 |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
 ---------------------------------------------------------------------------------------------
 
 ---------------------------------------------------------------------------------------------
@@ -25,7 +32,7 @@ practica3               | None
 ---------------------------------------------------------------------------------------------
 
 
-Simulation Options: asim -O2 +access +r +m+lorenz_osc lorenz_osc
+Simulation Options: asim -O2 +access +r +m+lorenz_osc_dac lorenz_osc_dac
 
 
 The performance of simulation is reduced. Version Student Edition

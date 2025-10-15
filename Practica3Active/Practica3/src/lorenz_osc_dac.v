@@ -48,7 +48,7 @@ module lorenz_osc_dac (
     assign Xout16 = {Xout[31], Xout[26:12]};
     assign Yout16 = {Yout[31], Yout[26:12]};
     assign Zout16 = {Zout[31], Zout[26:12]};  
-    assign NRST = ~RST;
+    assign NRST = RST;
     
     always @(posedge CLK or posedge RST) begin
         if (RST) begin

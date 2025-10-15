@@ -2,7 +2,7 @@
 <design-settings>
 	<plugins>
 		<Aldec.Stimuli.1>
-			<hierarchy activeStimuliSetName="StimuliSet25">
+			<hierarchy activeStimuliSetName="StimuliSet27">
 				<stimuliSet name="StimuliSet1">
 					<stimulus name="Stimulus1" strength="default" enabled="true" type="value">
 						<stimulus_data>
@@ -863,6 +863,70 @@
 					</stimulus>
 				</stimuliSet>
 				<stimuliSet name="StimuliSet25">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="1ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/lorenz_osc/clk"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="0" time="0fs"/>
+								<entry value="1" time="1ns"/>
+								<entry value="0" time="2ns"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/lorenz_osc/rst"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet26">
+					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
+						<stimulus_data>
+							<period value="1ns"/>
+							<low_value value="0"/>
+							<high_value value="1"/>
+							<starting_value value="low"/>
+							<duty_cycle value="50.000000"/>
+							<offset value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<frequency_jitter value="0fs" enabled="false"/>
+							<phase_jitter value="0fs" enabled="false"/>
+						</stimulus_data>
+						<signals>
+							<signal path="/lorenz_osc_dac/CLK"/>
+						</signals>
+					</stimulus>
+					<stimulus name="Stimulus2" strength="default" enabled="true" type="formula">
+						<stimulus_data>
+							<repeat_time value="0fs" enabled="false"/>
+							<cancel_time value="0fs" enabled="false"/>
+							<entries>
+								<entry value="1" time="0fs"/>
+								<entry value="0" time="1ns"/>
+								<entry value="1" time="2ns"/>
+							</entries>
+						</stimulus_data>
+						<signals>
+							<signal path="/lorenz_osc_dac/RST"/>
+						</signals>
+					</stimulus>
+				</stimuliSet>
+				<stimuliSet name="StimuliSet27">
 					<stimulus name="Stimulus1" strength="default" enabled="true" type="clock">
 						<stimulus_data>
 							<period value="1ns"/>

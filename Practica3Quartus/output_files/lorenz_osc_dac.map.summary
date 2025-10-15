@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Oct 13 18:12:03 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : lorenz_osc_dac
+Top-level Entity Name : lorenz_osc_dac
+Family : MAX 10
+Total logic elements : 1,434
+    Total combinational functions : 1,290
+    Dedicated logic registers : 644
+Total registers : 644
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 16
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

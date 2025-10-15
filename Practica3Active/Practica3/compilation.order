@@ -8,3 +8,10 @@
 .\src\scm_10.v
 .\src\lorenz_oscillator.v
 .\src\tbs.v
+.\src\dac7565.v
+.\src\dacFSM.v
+.\src\dacGCount.v
+.\src\dacGReg.v
+.\src\dacGShifter.v
+.\src\dacGTimer.v
+.\src\lorenz_osc_dac.v

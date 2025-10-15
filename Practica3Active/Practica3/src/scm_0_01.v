@@ -32,17 +32,17 @@ module scm_0_01 (
 		if (rst) begin
 			Y = 32'b0;
 		end else begin 
-		  assign w1 = X;
-		  assign w128 = w1 << 7;
-		  assign w129 = w1 + w128;
-		  assign w32 = w1 << 5;
-		  assign w33 = w1 + w32;
-		  assign w2064 = w129 << 4;
-		  assign w2097 = w33 + w2064;
-		  assign w8388 = w2097 << 2;
-		  assign w10485 = w2097 + w8388;
+		  w1 = X;
+		  w128 = w1 << 7;
+		  w129 = w1 + w128;
+		  w32 = w1 << 5;
+		   w33 = w1 + w32;
+		   w2064 = w129 << 4;
+		   w2097 = w33 + w2064;
+		   w8388 = w2097 << 2;
+		   w10485 = w2097 + w8388;
 		
-		  assign Y = w10485[51:20];
+		   Y = w10485[51:20];
   	end		   
 end
 

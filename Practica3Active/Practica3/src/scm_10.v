@@ -27,12 +27,12 @@ module scm_10(
 		if (rst) begin
 			Y = 32'b0;
 		end else begin 
-		  assign w1 = X;
-		  assign w4 = w1 << 2;
-		  assign w5 = w1 + w4;
-		  assign w10485760 = w5 << 21;
+		  w1 = X;
+		  w4 = w1 << 2;
+		  w5 = w1 + w4;
+		  w10485760 = w5 << 21;
 		
-		  assign Y = w10485760[51:20]; 
+		  Y = w10485760[51:20]; 
   	end		   
 end
 

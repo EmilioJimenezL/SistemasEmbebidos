@@ -1,0 +1,30 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+[Configurations]
+compile=MaquinasDeEstado
+[Library]
+MaquinasDeEstado=.\MaquinasDeEstado\MaquinasDeEstado.lib
+[$LibMap$]
+MaquinasDeEstado=.
+Active_lib=
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VERILOG
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+[Files]
+/MaquinaMealy101.v=-1
+/tb.v=-1
+/santi.v=-1
+[Files.Data]
+.\src\MaquinaMealy101.v=Verilog Source Code
+.\src\tb.v=Verilog Source Code
+.\src\santi.v=Verilog Source Code
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=

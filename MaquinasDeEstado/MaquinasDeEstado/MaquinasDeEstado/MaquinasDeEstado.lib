@@ -1,0 +1,79 @@
+timestamp=1760546011986
+
+[~A]
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/MaquinaMealy101.v=0*40303*41155
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/santi.v=0*44149*45119
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/tb.v=0*66510*67269
+LastVerilogToplevel=tb
+ModifyID=39
+Version=74
+
+[~MFT]
+0=8|0MaquinasDeEstado.mgf|67269|44386
+1=8|1MaquinasDeEstado.mgf|94303|84226
+3=16|3MaquinasDeEstado.mgf|103871|93866
+
+[$root]
+A/$root=22|||1*91754
+BinW64/$root=3*99831
+SLP=3*99946
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216cdd00b12c02ba63cd3f9e9a1b86629b3
+
+[mealy101]
+A/mealy101=22|../src/MaquinaMealy101.v|1|1*43944
+BinW64/mealy101=3*43465
+R=../src/MaquinaMealy101.v|1
+SLP=3*44260
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|cf99fbda06935e6c1d1b30b24a1773085bc967d7ba3d83083d40eba08de5e7f72cb8e94599d53ea01cf1c23cb3791d61
+
+[mili]
+A/mili=22|../src/santi.v|1|1*50645
+BinW64/mili=3*49761
+R=../src/santi.v|1
+SLP=3*50547
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8c55a49ae81bd8d0c25e712bb431fd552ff70865d5c5247c4370e25a4eecdba
+
+[moore101]
+A/moore101=22|../src/MaquinaMealy101.v|52|1*45809
+BinW64/moore101=3*44889
+R=../src/MaquinaMealy101.v|52
+SLP=3*45818
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ec38ca67f94ab3ad2fdc62344eb868c111e08a726979deac793c13ffa5a55c0c69d0143f8df00a90ade5565980094199
+
+[mur]
+A/mur=22|../src/santi.v|52|1*52449
+BinW64/mur=3*51168
+R=../src/santi.v|52
+SLP=3*52001
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0b4a3c3caa618845c4bdd0d78c4303aac18c7a589202a10f36cae6516550de57
+
+[tb]
+A/tb=22|../src/tb.v|71|1*94303
+BinW64/tb=3*102886
+R=../src/tb.v|71
+SLP=3*103871
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8db8692708dc0985d408d2497dbc95fa3c2e4b24efe599b5ebec24ba5d5ca208
+
+[tbMealy]
+A/tbMealy=22|../src/tb.v|3|1*92144
+BinW64/tbMealy=3*100014
+R=../src/tb.v|3
+SLP=3*100903
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8b3f4af6500f80ff9d6729656c0ac4026527262ddaa47cb266f3a3c4d9b973a848983280a4def384c4e446982581c97
+
+[tbMoore]
+A/tbMoore=22|../src/tb.v|37|1*93220
+BinW64/tbMoore=3*101448
+R=../src/tb.v|37
+SLP=3*102337
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|203506aae516b12142a9b3122b98c4f926527262ddaa47cb266f3a3c4d9b973adfdb7d8e691dc70dbbe8ab5a23995f05
+
+[~U]
+$root=12|0*65800|
+mealy101=12|0*39808|
+mili=12|0*43679||0x10
+moore101=12|0*40054||0x10
+mur=12|0*43912||0x10
+tb=12|0*66346||0x10
+tbMealy=12|0*66014||0x10
+tbMoore=12|0*66180||0x10

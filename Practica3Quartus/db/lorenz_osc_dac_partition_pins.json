@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "EOW",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_SYNC",
+					"strict" : false
+				},
+				{
+					"name" : "DAC_DIN",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "RST",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

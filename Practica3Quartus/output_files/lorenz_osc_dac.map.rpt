@@ -1,0 +1,979 @@
+Analysis & Synthesis report for lorenz_osc_dac
+Mon Oct 13 18:12:03 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis DSP Block Usage Summary
+  9. State Machine - |lorenz_osc_dac|DAC7565:DAC|dacFSM:Control|Qp
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: Top-level Entity: |lorenz_osc_dac
+ 15. Parameter Settings for User Entity Instance: lorenz_osc:lorenz
+ 16. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs1
+ 17. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder1
+ 18. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs2
+ 19. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|multiplier:mult1
+ 20. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs3
+ 21. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder2
+ 22. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|multiplier:mult2
+ 23. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs4
+ 24. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder3
+ 25. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|counter:counter1
+ 26. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registrox
+ 27. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registroy
+ 28. Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registroz
+ 29. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh0
+ 30. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh1
+ 31. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh2
+ 32. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh3
+ 33. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGShifter:Shifter
+ 34. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGCount:ChCount
+ 35. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGCount:BitCount
+ 36. Parameter Settings for User Entity Instance: DAC7565:DAC|dacGTimer:ISPFreq
+ 37. Parameter Settings for Inferred Entity Instance: lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0
+ 38. Parameter Settings for Inferred Entity Instance: lorenz_osc:lorenz|multiplier:mult1|lpm_mult:Mult0
+ 39. lpm_mult Parameter Settings by Entity Instance
+ 40. Port Connectivity Checks: "DAC7565:DAC|dacGTimer:ISPFreq"
+ 41. Port Connectivity Checks: "DAC7565:DAC|dacGCount:BitCount"
+ 42. Port Connectivity Checks: "DAC7565:DAC|dacGCount:ChCount"
+ 43. Port Connectivity Checks: "DAC7565:DAC|dacGShifter:Shifter"
+ 44. Port Connectivity Checks: "DAC7565:DAC"
+ 45. Port Connectivity Checks: "lorenz_osc:lorenz|restador:subs2"
+ 46. Port Connectivity Checks: "lorenz_osc:lorenz"
+ 47. Post-Synthesis Netlist Statistics for Top Partition
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Oct 13 18:12:03 2025           ;
+; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                      ; lorenz_osc_dac                                  ;
+; Top-level Entity Name              ; lorenz_osc_dac                                  ;
+; Family                             ; MAX 10                                          ;
+; Total logic elements               ; 1,434                                           ;
+;     Total combinational functions  ; 1,290                                           ;
+;     Dedicated logic registers      ; 644                                             ;
+; Total registers                    ; 644                                             ;
+; Total pins                         ; 9                                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 16                                              ;
+; Total PLLs                         ; 0                                               ;
+; UFM blocks                         ; 0                                               ;
+; ADC blocks                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                            ; lorenz_osc_dac     ; lorenz_osc_dac     ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
+;                            ;             ;
+; Average used               ; 1.01        ;
+; Maximum used               ; 16          ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
+;     Processor 4            ;   0.1%      ;
+;     Processor 5            ;   0.1%      ;
+;     Processor 6            ;   0.1%      ;
+;     Processor 7            ;   0.1%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                              ; Library ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; ../Practica3Active/Practica3/src/scm_2_66.v          ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_2_66.v          ;         ;
+; ../Practica3Active/Practica3/src/scm_10.v            ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_10.v            ;         ;
+; ../Practica3Active/Practica3/src/scm_0_01.v          ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_0_01.v          ;         ;
+; ../Practica3Active/Practica3/src/restador.v          ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/restador.v          ;         ;
+; ../Practica3Active/Practica3/src/register.v          ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/register.v          ;         ;
+; ../Practica3Active/Practica3/src/multiplier.v        ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v        ;         ;
+; ../Practica3Active/Practica3/src/lorenz_oscillator.v ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v ;         ;
+; ../Practica3Active/Practica3/src/lorenz_osc_dac.v    ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v    ;         ;
+; ../Practica3Active/Practica3/src/dacGShifter.v       ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGShifter.v       ;         ;
+; ../Practica3Active/Practica3/src/dacGTimer.v         ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGTimer.v         ;         ;
+; ../Practica3Active/Practica3/src/dacGReg.v           ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGReg.v           ;         ;
+; ../Practica3Active/Practica3/src/dacGCount.v         ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGCount.v         ;         ;
+; ../Practica3Active/Practica3/src/dacFSM.v            ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacFSM.v            ;         ;
+; ../Practica3Active/Practica3/src/dac7565.v           ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v           ;         ;
+; ../Practica3Active/Practica3/src/counter.v           ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/counter.v           ;         ;
+; ../Practica3Active/Practica3/src/adder.v             ; yes             ; User Verilog HDL File        ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v             ;         ;
+; lpm_mult.tdf                                         ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_mult.tdf                          ;         ;
+; aglobal241.inc                                       ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/aglobal241.inc                        ;         ;
+; lpm_add_sub.inc                                      ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/lpm_add_sub.inc                       ;         ;
+; multcore.inc                                         ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/multcore.inc                          ;         ;
+; bypassff.inc                                         ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/bypassff.inc                          ;         ;
+; altshift.inc                                         ; yes             ; Megafunction                 ; /home/emilio/intelFPGA_lite/24.1std/quartus/libraries/megafunctions/altshift.inc                          ;         ;
+; db/mult_qgs.tdf                                      ; yes             ; Auto-Generated Megafunction  ; /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Quartus/db/mult_qgs.tdf                  ;         ;
++------------------------------------------------------+-----------------+------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,434     ;
+;                                             ;           ;
+; Total combinational functions               ; 1290      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 72        ;
+;     -- 3 input functions                    ; 1060      ;
+;     -- <=2 input functions                  ; 158       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 138       ;
+;     -- arithmetic mode                      ; 1152      ;
+;                                             ;           ;
+; Total registers                             ; 644       ;
+;     -- Dedicated logic registers            ; 644       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 9         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 16        ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 644       ;
+; Total fan-out                               ; 6108      ;
+; Average fan-out                             ; 3.10      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                    ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                       ; Entity Name    ; Library Name ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+----------------+--------------+
+; |lorenz_osc_dac                       ; 1290 (25)           ; 644 (14)                  ; 0           ; 0          ; 16           ; 0       ; 8         ; 9    ; 0            ; 0          ; |lorenz_osc_dac                                                                           ; lorenz_osc_dac ; work         ;
+;    |DAC7565:DAC|                      ; 76 (32)             ; 67 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC                                                               ; DAC7565        ; work         ;
+;       |dacFSM:Control|                ; 13 (13)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacFSM:Control                                                ; dacFSM         ; work         ;
+;       |dacGCount:BitCount|            ; 7 (7)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGCount:BitCount                                            ; dacGCount      ; work         ;
+;       |dacGCount:ChCount|             ; 2 (2)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGCount:ChCount                                             ; dacGCount      ; work         ;
+;       |dacGReg:RegCh0|                ; 1 (1)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGReg:RegCh0                                                ; dacGReg        ; work         ;
+;       |dacGReg:RegCh2|                ; 1 (1)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGReg:RegCh2                                                ; dacGReg        ; work         ;
+;       |dacGReg:RegCh3|                ; 1 (1)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGReg:RegCh3                                                ; dacGReg        ; work         ;
+;       |dacGShifter:Shifter|           ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGShifter:Shifter                                           ; dacGShifter    ; work         ;
+;       |dacGTimer:ISPFreq|             ; 5 (5)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|DAC7565:DAC|dacGTimer:ISPFreq                                             ; dacGTimer      ; work         ;
+;    |lorenz_osc:lorenz|                ; 1189 (0)            ; 563 (0)                   ; 0           ; 0          ; 16           ; 0       ; 8         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz                                                         ; lorenz_osc     ; work         ;
+;       |adder:adder1|                  ; 32 (32)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|adder:adder1                                            ; adder          ; work         ;
+;       |adder:adder2|                  ; 32 (32)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|adder:adder2                                            ; adder          ; work         ;
+;       |adder:adder3|                  ; 32 (32)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|adder:adder3                                            ; adder          ; work         ;
+;       |counter:counter1|              ; 50 (50)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|counter:counter1                                        ; counter        ; work         ;
+;       |multiplier:mult1|              ; 68 (34)             ; 32 (32)                   ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult1                                        ; multiplier     ; work         ;
+;          |lpm_mult:Mult0|             ; 34 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult1|lpm_mult:Mult0                         ; lpm_mult       ; work         ;
+;             |mult_qgs:auto_generated| ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult1|lpm_mult:Mult0|mult_qgs:auto_generated ; mult_qgs       ; work         ;
+;       |multiplier:mult2|              ; 68 (34)             ; 32 (32)                   ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult2                                        ; multiplier     ; work         ;
+;          |lpm_mult:Mult0|             ; 34 (0)              ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0                         ; lpm_mult       ; work         ;
+;             |mult_qgs:auto_generated| ; 34 (34)             ; 0 (0)                     ; 0           ; 0          ; 8            ; 0       ; 4         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0|mult_qgs:auto_generated ; mult_qgs       ; work         ;
+;       |register:registrox|            ; 1 (1)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|register:registrox                                      ; register       ; work         ;
+;       |register:registroy|            ; 1 (1)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|register:registroy                                      ; register       ; work         ;
+;       |register:registroz|            ; 1 (1)               ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|register:registroz                                      ; register       ; work         ;
+;       |restador:subs1|                ; 31 (31)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|restador:subs1                                          ; restador       ; work         ;
+;       |restador:subs2|                ; 31 (31)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|restador:subs2                                          ; restador       ; work         ;
+;       |restador:subs3|                ; 32 (32)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|restador:subs3                                          ; restador       ; work         ;
+;       |restador:subs4|                ; 32 (32)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|restador:subs4                                          ; restador       ; work         ;
+;       |scm_0_01:scm2|                 ; 145 (145)           ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|scm_0_01:scm2                                           ; scm_0_01       ; work         ;
+;       |scm_0_01:scm3|                 ; 149 (149)           ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|scm_0_01:scm3                                           ; scm_0_01       ; work         ;
+;       |scm_0_01:scm5|                 ; 149 (149)           ; 28 (28)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|scm_0_01:scm5                                           ; scm_0_01       ; work         ;
+;       |scm_10:scm1|                   ; 29 (29)             ; 31 (31)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|scm_10:scm1                                             ; scm_10         ; work         ;
+;       |scm_2_66:scm4|                 ; 306 (306)           ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |lorenz_osc_dac|lorenz_osc:lorenz|scm_2_66:scm4                                           ; scm_2_66       ; work         ;
++---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 8           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 16          ;
+; Signed Embedded Multipliers           ; 2           ;
+; Unsigned Embedded Multipliers         ; 2           ;
+; Mixed Sign Embedded Multipliers       ; 4           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------+
+; State Machine - |lorenz_osc_dac|DAC7565:DAC|dacFSM:Control|Qp                                     ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Name    ; Qp.0111 ; Qp.0110 ; Qp.0101 ; Qp.0100 ; Qp.0011 ; Qp.0010 ; Qp.0001 ; Qp.0000 ; Qp.1000 ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+; Qp.0000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ;
+; Qp.0001 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ; 0       ;
+; Qp.0010 ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 1       ; 0       ;
+; Qp.0011 ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 1       ; 0       ;
+; Qp.0100 ; 0       ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; Qp.0101 ; 0       ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; Qp.0110 ; 0       ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; Qp.0111 ; 1       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 0       ;
+; Qp.1000 ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 0       ; 1       ; 1       ;
++---------+---------+---------+---------+---------+---------+---------+---------+---------+---------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                            ;
++-------------------------------------------+---------------------------------------------------+
+; Register name                             ; Reason for Removal                                ;
++-------------------------------------------+---------------------------------------------------+
+; lorenz_osc:lorenz|scm_10:scm1|Y[0]        ; Stuck at GND due to stuck port data_in            ;
+; lorenz_osc:lorenz|restador:subs1|out1[31] ; Lost fanout                                       ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[15]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[15]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[14]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[14]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[13]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[13]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[12]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[12]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[11]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[11]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[10]         ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[10]     ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[9]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[9]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[8]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[8]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[7]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[7]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[6]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[6]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[5]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[5]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[4]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[4]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[3]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[3]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[2]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[2]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[1]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[1]      ;
+; DAC7565:DAC|dacGReg:RegCh1|Qp[0]          ; Merged with DAC7565:DAC|dacGReg:RegCh2|Qp[0]      ;
+; lorenz_osc:lorenz|scm_0_01:scm5|Y[27..30] ; Merged with lorenz_osc:lorenz|scm_0_01:scm5|Y[31] ;
+; lorenz_osc:lorenz|scm_0_01:scm3|Y[27..30] ; Merged with lorenz_osc:lorenz|scm_0_01:scm3|Y[31] ;
+; lorenz_osc:lorenz|scm_0_01:scm2|Y[27..30] ; Merged with lorenz_osc:lorenz|scm_0_01:scm2|Y[31] ;
+; DAC7565:DAC|dacFSM:Control|Qp~4           ; Lost fanout                                       ;
+; DAC7565:DAC|dacFSM:Control|Qp~5           ; Lost fanout                                       ;
+; DAC7565:DAC|dacFSM:Control|Qp~6           ; Lost fanout                                       ;
+; Total Number of Removed Registers = 33    ;                                                   ;
++-------------------------------------------+---------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 644   ;
+; Number of registers using Synchronous Clear  ; 5     ;
+; Number of registers using Synchronous Load   ; 5     ;
+; Number of registers using Asynchronous Clear ; 643   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 145   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------+
+; Inverted Register Statistics                         ;
++--------------------------------------------+---------+
+; Inverted Register                          ; Fan out ;
++--------------------------------------------+---------+
+; lorenz_osc:lorenz|register:registroz|q[20] ; 10      ;
+; lorenz_osc:lorenz|register:registrox|q[20] ; 7       ;
+; lorenz_osc:lorenz|register:registroy|q[20] ; 6       ;
+; Total number of inverted registers = 3     ;         ;
++--------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |lorenz_osc_dac|DAC7565:DAC|dacGTimer:ISPFreq|Qp[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |lorenz_osc_dac ;
++----------------+---------------+-----------------------------------------------+
+; Parameter Name ; Value         ; Type                                          ;
++----------------+---------------+-----------------------------------------------+
+; K              ; 0000011111010 ; Unsigned Binary                               ;
+; zero           ; 0000000000000 ; Unsigned Binary                               ;
++----------------+---------------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz      ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; n              ; 32                               ; Signed Integer  ;
+; init           ; 00000000000100000000000000000000 ; Unsigned Binary ;
++----------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder1 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|multiplier:mult1 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs3 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder2 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|multiplier:mult2 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|restador:subs4 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|adder:adder3 ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|counter:counter1 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; n              ; 1000  ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registrox ;
++----------------+----------------------------------+-------------------------------+
+; Parameter Name ; Value                            ; Type                          ;
++----------------+----------------------------------+-------------------------------+
+; n              ; 32                               ; Signed Integer                ;
+; INIT_VAL       ; 00000000000100000000000000000000 ; Unsigned Binary               ;
++----------------+----------------------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registroy ;
++----------------+----------------------------------+-------------------------------+
+; Parameter Name ; Value                            ; Type                          ;
++----------------+----------------------------------+-------------------------------+
+; n              ; 32                               ; Signed Integer                ;
+; INIT_VAL       ; 00000000000100000000000000000000 ; Unsigned Binary               ;
++----------------+----------------------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lorenz_osc:lorenz|register:registroz ;
++----------------+----------------------------------+-------------------------------+
+; Parameter Name ; Value                            ; Type                          ;
++----------------+----------------------------------+-------------------------------+
+; n              ; 32                               ; Signed Integer                ;
+; INIT_VAL       ; 00000000000100000000000000000000 ; Unsigned Binary               ;
++----------------+----------------------------------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh0 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh1 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh2 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGReg:RegCh3 ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; n              ; 16    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGShifter:Shifter ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; n              ; 24    ; Signed Integer                                      ;
+; m              ; 5     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGCount:ChCount ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 2     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGCount:BitCount ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; n              ; 5     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DAC7565:DAC|dacGTimer:ISPFreq ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; n              ; 3     ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0 ;
++------------------------------------------------+----------+----------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                   ;
++------------------------------------------------+----------+----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                         ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                                ;
+; LPM_WIDTHB                                     ; 32       ; Untyped                                ;
+; LPM_WIDTHP                                     ; 64       ; Untyped                                ;
+; LPM_WIDTHR                                     ; 64       ; Untyped                                ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                ;
+; LPM_REPRESENTATION                             ; SIGNED   ; Untyped                                ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                ;
+; LATENCY                                        ; 0        ; Untyped                                ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                ;
+; USE_EAB                                        ; OFF      ; Untyped                                ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                ;
+; CBXI_PARAMETER                                 ; mult_qgs ; Untyped                                ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                ;
++------------------------------------------------+----------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lorenz_osc:lorenz|multiplier:mult1|lpm_mult:Mult0 ;
++------------------------------------------------+----------+----------------------------------------+
+; Parameter Name                                 ; Value    ; Type                                   ;
++------------------------------------------------+----------+----------------------------------------+
+; AUTO_CARRY_CHAINS                              ; ON       ; AUTO_CARRY                             ;
+; IGNORE_CARRY_BUFFERS                           ; OFF      ; IGNORE_CARRY                           ;
+; AUTO_CASCADE_CHAINS                            ; ON       ; AUTO_CASCADE                           ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF      ; IGNORE_CASCADE                         ;
+; LPM_WIDTHA                                     ; 32       ; Untyped                                ;
+; LPM_WIDTHB                                     ; 32       ; Untyped                                ;
+; LPM_WIDTHP                                     ; 64       ; Untyped                                ;
+; LPM_WIDTHR                                     ; 64       ; Untyped                                ;
+; LPM_WIDTHS                                     ; 1        ; Untyped                                ;
+; LPM_REPRESENTATION                             ; SIGNED   ; Untyped                                ;
+; LPM_PIPELINE                                   ; 0        ; Untyped                                ;
+; LATENCY                                        ; 0        ; Untyped                                ;
+; INPUT_A_IS_CONSTANT                            ; NO       ; Untyped                                ;
+; INPUT_B_IS_CONSTANT                            ; NO       ; Untyped                                ;
+; USE_EAB                                        ; OFF      ; Untyped                                ;
+; MAXIMIZE_SPEED                                 ; 5        ; Untyped                                ;
+; DEVICE_FAMILY                                  ; MAX 10   ; Untyped                                ;
+; CARRY_CHAIN                                    ; MANUAL   ; Untyped                                ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT      ; TECH_MAPPER_APEX20K                    ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO     ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0        ; Untyped                                ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0        ; Untyped                                ;
+; CBXI_PARAMETER                                 ; mult_qgs ; Untyped                                ;
+; INPUT_A_FIXED_VALUE                            ; Bx       ; Untyped                                ;
+; INPUT_B_FIXED_VALUE                            ; Bx       ; Untyped                                ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF      ; Untyped                                ;
++------------------------------------------------+----------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                                            ;
++---------------------------------------+---------------------------------------------------+
+; Name                                  ; Value                                             ;
++---------------------------------------+---------------------------------------------------+
+; Number of entity instances            ; 2                                                 ;
+; Entity Instance                       ; lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 32                                                ;
+;     -- LPM_WIDTHB                     ; 32                                                ;
+;     -- LPM_WIDTHP                     ; 64                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                ;
+;     -- USE_EAB                        ; OFF                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                ;
+; Entity Instance                       ; lorenz_osc:lorenz|multiplier:mult1|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 32                                                ;
+;     -- LPM_WIDTHB                     ; 32                                                ;
+;     -- LPM_WIDTHP                     ; 64                                                ;
+;     -- LPM_REPRESENTATION             ; SIGNED                                            ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                                                ;
+;     -- INPUT_B_IS_CONSTANT            ; NO                                                ;
+;     -- USE_EAB                        ; OFF                                               ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                              ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                                                ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                                                ;
++---------------------------------------+---------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "DAC7565:DAC|dacGTimer:ISPFreq" ;
++---------+-------+----------+------------------------------+
+; Port    ; Type  ; Severity ; Details                      ;
++---------+-------+----------+------------------------------+
+; K[1..0] ; Input ; Info     ; Stuck at GND                 ;
+; K[2]    ; Input ; Info     ; Stuck at VCC                 ;
++---------+-------+----------+------------------------------+
+
+
++------------------------------------------------------------+
+; Port Connectivity Checks: "DAC7565:DAC|dacGCount:BitCount" ;
++---------+-------+----------+-------------------------------+
+; Port    ; Type  ; Severity ; Details                       ;
++---------+-------+----------+-------------------------------+
+; K[2..0] ; Input ; Info     ; Stuck at VCC                  ;
+; K[4]    ; Input ; Info     ; Stuck at VCC                  ;
+; K[3]    ; Input ; Info     ; Stuck at GND                  ;
++---------+-------+----------+-------------------------------+
+
+
++-----------------------------------------------------------+
+; Port Connectivity Checks: "DAC7565:DAC|dacGCount:ChCount" ;
++------+-------+----------+---------------------------------+
+; Port ; Type  ; Severity ; Details                         ;
++------+-------+----------+---------------------------------+
+; K    ; Input ; Info     ; Stuck at VCC                    ;
++------+-------+----------+---------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "DAC7565:DAC|dacGShifter:Shifter" ;
++-------------+-------+----------+----------------------------+
+; Port        ; Type  ; Severity ; Details                    ;
++-------------+-------+----------+----------------------------+
+; Din[23..22] ; Input ; Info     ; Stuck at GND               ;
+; Din[20..19] ; Input ; Info     ; Stuck at GND               ;
+; Din[16]     ; Input ; Info     ; Stuck at GND               ;
++-------------+-------+----------+----------------------------+
+
+
++-----------------------------------------+
+; Port Connectivity Checks: "DAC7565:DAC" ;
++------+-------+----------+---------------+
+; Port ; Type  ; Severity ; Details       ;
++------+-------+----------+---------------+
+; DRST ; Input ; Info     ; Stuck at GND  ;
++------+-------+----------+---------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "lorenz_osc:lorenz|restador:subs2" ;
++-----------+-------+----------+-------------------------------+
+; Port      ; Type  ; Severity ; Details                       ;
++-----------+-------+----------+-------------------------------+
+; a[24..22] ; Input ; Info     ; Stuck at VCC                  ;
+; a[31..25] ; Input ; Info     ; Stuck at GND                  ;
+; a[21..0]  ; Input ; Info     ; Stuck at GND                  ;
++-----------+-------+----------+-------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "lorenz_osc:lorenz"                                                                       ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; x[30..27] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; x[11..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y[30..27] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; y[11..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; z[30..27] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; z[11..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 9                           ;
+; cycloneiii_ff         ; 644                         ;
+;     CLR               ; 494                         ;
+;     CLR SCLR SLD      ; 5                           ;
+;     ENA               ; 1                           ;
+;     ENA CLR           ; 144                         ;
+; cycloneiii_lcell_comb ; 1293                        ;
+;     arith             ; 1152                        ;
+;         2 data inputs ; 99                          ;
+;         3 data inputs ; 1053                        ;
+;     normal            ; 141                         ;
+;         0 data inputs ; 16                          ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 72                          ;
+; cycloneiii_mac_mult   ; 8                           ;
+; cycloneiii_mac_out    ; 8                           ;
+;                       ;                             ;
+; Max LUT depth         ; 11.10                       ;
+; Average LUT depth     ; 5.26                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Mon Oct 13 18:11:57 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lorenz_osc_dac -c lorenz_osc_dac
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_2_66.v
+    Info (12023): Found entity 1: scm_2_66 File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_2_66.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_10.v
+    Info (12023): Found entity 1: scm_10 File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_10.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_0_01.v
+    Info (12023): Found entity 1: scm_0_01 File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/scm_0_01.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/restador.v
+    Info (12023): Found entity 1: restador File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/restador.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/register.v
+    Info (12023): Found entity 1: register File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/register.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v
+    Info (12023): Found entity 1: multiplier File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v
+    Info (12023): Found entity 1: lorenz_osc File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v
+    Info (12023): Found entity 1: lorenz_osc_dac File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGShifter.v
+    Info (12023): Found entity 1: dacGShifter File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGShifter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGTimer.v
+    Info (12023): Found entity 1: dacGTimer File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGTimer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGReg.v
+    Info (12023): Found entity 1: dacGReg File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGReg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGCount.v
+    Info (12023): Found entity 1: dacGCount File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGCount.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacFSM.v
+    Info (12023): Found entity 1: dacFSM File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacFSM.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v
+    Info (12023): Found entity 1: DAC7565 File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/counter.v
+    Info (12023): Found entity 1: counter File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v
+    Info (12023): Found entity 1: adder File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/adder.v Line: 1
+Warning (10222): Verilog HDL Parameter Declaration warning at lorenz_oscillator.v(10): Parameter Declaration in module "lorenz_osc" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 10
+Info (12127): Elaborating entity "lorenz_osc_dac" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at lorenz_osc_dac.v(60): truncated value with size 32 to match size of target (16) File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 60
+Warning (10230): Verilog HDL assignment warning at lorenz_osc_dac.v(63): truncated value with size 32 to match size of target (13) File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 63
+Info (12128): Elaborating entity "lorenz_osc" for hierarchy "lorenz_osc:lorenz" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 29
+Info (12128): Elaborating entity "restador" for hierarchy "lorenz_osc:lorenz|restador:subs1" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 26
+Info (12128): Elaborating entity "scm_10" for hierarchy "lorenz_osc:lorenz|scm_10:scm1" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 32
+Info (12128): Elaborating entity "scm_0_01" for hierarchy "lorenz_osc:lorenz|scm_0_01:scm2" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 38
+Info (12128): Elaborating entity "adder" for hierarchy "lorenz_osc:lorenz|adder:adder1" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 44
+Info (12128): Elaborating entity "multiplier" for hierarchy "lorenz_osc:lorenz|multiplier:mult1" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 57
+Info (12128): Elaborating entity "scm_2_66" for hierarchy "lorenz_osc:lorenz|scm_2_66:scm4" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 88
+Info (12128): Elaborating entity "counter" for hierarchy "lorenz_osc:lorenz|counter:counter1" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 112
+Info (12128): Elaborating entity "register" for hierarchy "lorenz_osc:lorenz|register:registrox" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_oscillator.v Line: 117
+Info (12128): Elaborating entity "DAC7565" for hierarchy "DAC7565:DAC" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 46
+Info (12128): Elaborating entity "dacGReg" for hierarchy "DAC7565:DAC|dacGReg:RegCh0" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 52
+Info (12128): Elaborating entity "dacGShifter" for hierarchy "DAC7565:DAC|dacGShifter:Shifter" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 57
+Info (12128): Elaborating entity "dacGCount" for hierarchy "DAC7565:DAC|dacGCount:ChCount" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 59
+Warning (10230): Verilog HDL assignment warning at dacGCount.v(19): truncated value with size 32 to match size of target (2) File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGCount.v Line: 19
+Info (12128): Elaborating entity "dacGCount" for hierarchy "DAC7565:DAC|dacGCount:BitCount" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 60
+Warning (10230): Verilog HDL assignment warning at dacGCount.v(19): truncated value with size 32 to match size of target (5) File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGCount.v Line: 19
+Info (12128): Elaborating entity "dacGTimer" for hierarchy "DAC7565:DAC|dacGTimer:ISPFreq" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 61
+Warning (10230): Verilog HDL assignment warning at dacGTimer.v(19): truncated value with size 32 to match size of target (3) File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacGTimer.v Line: 19
+Info (12128): Elaborating entity "dacFSM" for hierarchy "DAC7565:DAC|dacFSM:Control" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dac7565.v Line: 64
+Info (10264): Verilog HDL Case Statement information at dacFSM.v(19): all case item expressions in this case statement are onehot File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/dacFSM.v Line: 19
+Info (278001): Inferred 2 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "lorenz_osc:lorenz|multiplier:mult2|Mult0" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v Line: 19
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "lorenz_osc:lorenz|multiplier:mult1|Mult0" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v Line: 19
+Info (12130): Elaborated megafunction instantiation "lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v Line: 19
+Info (12133): Instantiated megafunction "lorenz_osc:lorenz|multiplier:mult2|lpm_mult:Mult0" with the following parameter: File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/multiplier.v Line: 19
+    Info (12134): Parameter "LPM_WIDTHA" = "32"
+    Info (12134): Parameter "LPM_WIDTHB" = "32"
+    Info (12134): Parameter "LPM_WIDTHP" = "64"
+    Info (12134): Parameter "LPM_WIDTHR" = "64"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_qgs.tdf
+    Info (12023): Found entity 1: mult_qgs File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Quartus/db/mult_qgs.tdf Line: 31
+Info (13014): Ignored 332 buffer(s)
+    Info (13019): Ignored 332 SOFT buffer(s)
+Info (13000): Registers with preset signals will power-up high File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/register.v Line: 19
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DAC_LDAC" is stuck at GND File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 9
+    Warning (13410): Pin "DAC_RST" is stuck at VCC File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 11
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "DRST" File: /mnt/1EFC8AD1FC8AA31F/Tareas/Otono25/Sistemas Embebidos/Practica3Active/Practica3/src/lorenz_osc_dac.v Line: 4
+Info (21057): Implemented 1461 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 1436 logic cells
+    Info (21062): Implemented 16 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 492 megabytes
+    Info: Processing ended: Mon Oct 13 18:12:03 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:18
+
+
