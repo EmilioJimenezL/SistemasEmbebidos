@@ -73,11 +73,11 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_AB13 -to DAC_DIN
-set_location_assignment PIN_W11 -to DAC_LDAC
-set_location_assignment PIN_Y11 -to DAC_RST
-set_location_assignment PIN_W13 -to DAC_SCLK
-set_location_assignment PIN_AA15 -to DAC_SYNC
+set_location_assignment PIN_V9 -to DAC_DIN
+set_location_assignment PIN_V8 -to DAC_LDAC
+set_location_assignment PIN_W9 -to DAC_RST
+set_location_assignment PIN_W10 -to DAC_SCLK
+set_location_assignment PIN_V10 -to DAC_SYNC
 set_location_assignment PIN_C11 -to DRST
 set_location_assignment PIN_P11 -to CLK
 set_location_assignment PIN_C10 -to RST

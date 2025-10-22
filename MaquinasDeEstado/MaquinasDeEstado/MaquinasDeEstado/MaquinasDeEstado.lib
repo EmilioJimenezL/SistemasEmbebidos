@@ -1,23 +1,49 @@
-timestamp=1760546011986
+timestamp=1761153646063
 
 [~A]
-D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/MaquinaMealy101.v=0*40303*41155
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/MaquinaMealy101.v=0*96006*97275
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/MaquinaMealy101.v_tb.v_santi.v_MaquinaMoore.v=0*77325*79694
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/MaquinaMoore.v=0*93459*94885
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/Puerta_Mealy.v=0*106100*107414
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/Puerta_Mealy.v_tb.v_santi.v_Puerta_Moore.v=0*112544*115246
+D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/Puerta_Moore.v=0*108587*110077
 D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/santi.v=0*44149*45119
 D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/tb.v=0*66510*67269
-LastVerilogToplevel=tb
-ModifyID=39
+LastVerilogToplevel=Puerta_Moore
+ModifyID=56
 Version=74
 
 [~MFT]
-0=8|0MaquinasDeEstado.mgf|67269|44386
-1=8|1MaquinasDeEstado.mgf|94303|84226
-3=16|3MaquinasDeEstado.mgf|103871|93866
+0=10|0MaquinasDeEstado.mgf|115246|67219
+1=16|1MaquinasDeEstado.mgf|173254|156242
+3=32|3MaquinasDeEstado.mgf|212991|190426
 
 [$root]
-A/$root=22|||1*91754
-BinW64/$root=3*99831
-SLP=3*99946
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216cdd00b12c02ba63cd3f9e9a1b86629b3
+A/$root=22|||1*162734
+BinW64/$root=3*197607
+SLP=3*197722
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216f4706a62106180786d5b91910e695125
+
+[Puerta_Automata]
+A/Puerta_Automata=22|../src/MaquinaMealy101.v|1|1*95958
+BinW64/Puerta_Automata=3*104700
+R=../src/MaquinaMealy101.v|1
+SLP=3*107384
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c932cccef21fca706061e320f6cd9ac692e59c5140c30db4607ee402269b96c2ef90224315d6605b036e6acdfa023d68
+
+[Puerta_Mealy]
+A/Puerta_Mealy=22|../src/Puerta_Mealy.v|1|1*163156
+BinW64/Puerta_Mealy=3*197790
+R=../src/Puerta_Mealy.v|1
+SLP=3*200645
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|fd6c1cd1112189b2ff69a7e108c32895ffd33db093bad133b6ae3c39105dc0aa38abc1e5e7d141b7b2106379246f7ce6
+
+[Puerta_Moore]
+A/Puerta_Moore=22|../src/Puerta_Moore.v|1|1*173254
+BinW64/Puerta_Moore=3*209924
+R=../src/Puerta_Moore.v|1
+SLP=3*212991
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|49773cb6fa1515f865110ff73c94a5c61087e16ef4e22ce6fd40b849c9d52035637056ebb16366c2318f39fbabd6b211
 
 [mealy101]
 A/mealy101=22|../src/MaquinaMealy101.v|1|1*43944
@@ -27,11 +53,11 @@ SLP=3*44260
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|cf99fbda06935e6c1d1b30b24a1773085bc967d7ba3d83083d40eba08de5e7f72cb8e94599d53ea01cf1c23cb3791d61
 
 [mili]
-A/mili=22|../src/santi.v|1|1*50645
-BinW64/mili=3*49761
+A/mili=22|../src/santi.v|1|1*169460
+BinW64/mili=3*207007
 R=../src/santi.v|1
-SLP=3*50547
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8c55a49ae81bd8d0c25e712bb431fd552ff70865d5c5247c4370e25a4eecdba
+SLP=3*207800
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8c55a49ae81bd8d0c25e712bb431fd5dc28e43ead0646fee35d5a8f283f55ab
 
 [moore101]
 A/moore101=22|../src/MaquinaMealy101.v|52|1*45809
@@ -41,39 +67,42 @@ SLP=3*45818
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ec38ca67f94ab3ad2fdc62344eb868c111e08a726979deac793c13ffa5a55c0c69d0143f8df00a90ade5565980094199
 
 [mur]
-A/mur=22|../src/santi.v|52|1*52449
-BinW64/mur=3*51168
+A/mur=22|../src/santi.v|52|1*171286
+BinW64/mur=3*208421
 R=../src/santi.v|52
-SLP=3*52001
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0b4a3c3caa618845c4bdd0d78c4303aac18c7a589202a10f36cae6516550de57
+SLP=3*209257
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|0b4a3c3caa618845c4bdd0d78c4303aa5c06a30ce635a5a859d8bde590f33bcf
 
 [tb]
-A/tb=22|../src/tb.v|71|1*94303
-BinW64/tb=3*102886
+A/tb=22|../src/tb.v|71|1*168211
+BinW64/tb=3*205376
 R=../src/tb.v|71
-SLP=3*103871
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8db8692708dc0985d408d2497dbc95fa3c2e4b24efe599b5ebec24ba5d5ca208
+SLP=3*206361
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8db8692708dc0985d408d2497dbc95fa7a79af24a00fa23e66d19d2aa393ae01
 
 [tbMealy]
-A/tbMealy=22|../src/tb.v|3|1*92144
-BinW64/tbMealy=3*100014
+A/tbMealy=22|../src/tb.v|3|1*166052
+BinW64/tbMealy=3*202504
 R=../src/tb.v|3
-SLP=3*100903
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8b3f4af6500f80ff9d6729656c0ac4026527262ddaa47cb266f3a3c4d9b973a848983280a4def384c4e446982581c97
+SLP=3*203393
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c8b3f4af6500f80ff9d6729656c0ac4026527262ddaa47cb266f3a3c4d9b973aea02ed7feacff530988d5acce3f8a496
 
 [tbMoore]
-A/tbMoore=22|../src/tb.v|37|1*93220
-BinW64/tbMoore=3*101448
+A/tbMoore=22|../src/tb.v|37|1*167128
+BinW64/tbMoore=3*203938
 R=../src/tb.v|37
-SLP=3*102337
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|203506aae516b12142a9b3122b98c4f926527262ddaa47cb266f3a3c4d9b973adfdb7d8e691dc70dbbe8ab5a23995f05
+SLP=3*204827
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|203506aae516b12142a9b3122b98c4f926527262ddaa47cb266f3a3c4d9b973aea2814c2e8b31480a16f422d2ed8e923
 
 [~U]
-$root=12|0*65800|
+$root=12|0*110663|
+Puerta_Automata=12|0*68059||0x10
+Puerta_Mealy=12|0*110909||0x10
+Puerta_Moore=12|0*112202||0x10
 mealy101=12|0*39808|
-mili=12|0*43679||0x10
+mili=12|0*111732|
 moore101=12|0*40054||0x10
-mur=12|0*43912||0x10
-tb=12|0*66346||0x10
-tbMealy=12|0*66014||0x10
-tbMoore=12|0*66180||0x10
+mur=12|0*111965|
+tb=12|0*111568||0x10
+tbMealy=12|0*111236||0x10
+tbMoore=12|0*111402||0x10

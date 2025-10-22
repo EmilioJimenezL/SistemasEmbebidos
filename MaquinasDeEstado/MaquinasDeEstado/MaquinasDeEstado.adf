@@ -17,13 +17,15 @@ REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
 [Files]
-/MaquinaMealy101.v=-1
+/Puerta_Mealy.v=-1
 /tb.v=-1
 /santi.v=-1
+/Puerta_Moore.v=-1
 [Files.Data]
-.\src\MaquinaMealy101.v=Verilog Source Code
+.\src\Puerta_Mealy.v=Verilog Source Code
 .\src\tb.v=Verilog Source Code
 .\src\santi.v=Verilog Source Code
+.\src\Puerta_Moore.v=Verilog Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel

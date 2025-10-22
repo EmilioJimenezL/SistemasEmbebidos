@@ -1,290 +1,113 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mealy101" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/santi.v
-# Unit top modules: mili mur.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-# ELBREAD: Elaboration process.
 # ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
 # ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
 # ELBREAD: Elaboration time 0.0 [s].
-asim -O2 +access +r +m+tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.1 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6403 kB (elbread=427 elab2=5841 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:03 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# VSIM: 4 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (111): $finish called.
-# KERNEL: Time: 161 ns,  Iteration: 0,  Instance: /tb,  Process: @INITIAL#82_1@.
-# KERNEL: stopped at time: 161 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Warning: VCP2590 tb.v : (9, 1): Undefined port in in module mili.
-# Warning: VCP2590 tb.v : (9, 1): Undefined port out in module mili.
-# Warning: VCP2590 tb.v : (43, 1): Undefined port in in module mur.
-# Warning: VCP2590 tb.v : (43, 1): Undefined port out in module mur.
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 4 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Warning: VCP2590 tb.v : (9, 1): Undefined port in in module mili.
-# Warning: VCP2590 tb.v : (9, 1): Undefined port out in module mili.
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 2 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 1[s].
-# done
-endsim
-# VSIM: Simulation has finished.
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O2 +access +r +m+tbMoore tbMoore
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5375 kB (elbread=427 elab2=4814 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:07 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# VSIM: 4 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (67): $finish called.
-# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /tbMoore,  Process: @INITIAL#47_1@.
-# KERNEL: stopped at time: 230 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v
+# Unit top modules: Puerta_Automata.
 # Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # done
-endsim
-# VSIM: Simulation has finished.
-asim -O2 +access +r +m+tbMoore tbMoore
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5375 kB (elbread=427 elab2=4814 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:08 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# VSIM: 4 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (70): $finish called.
-# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /tbMoore,  Process: @INITIAL#50_1@.
-# KERNEL: stopped at time: 230 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-asim -O2 +access +r +m+tbMealy tbMealy
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5375 kB (elbread=427 elab2=4814 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:08 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# VSIM: 4 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (36): $finish called.
-# KERNEL: Time: 232 ns,  Iteration: 0,  Instance: /tbMealy,  Process: @INITIAL#13_1@.
-# KERNEL: stopped at time: 232 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v
+# Warning: VCP2641 MaquinaMealy101.v : (147, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMealy101.v : (148, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMealy101.v : (149, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMealy101.v : (150, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMealy101.v : (151, 36): Redundant digits given in number 2'b100.
+# Error: VCP2020 MaquinaMealy101.v : (230, 16): begin...end pair(s) mismatch detected. 3 <end> tokens are missing.
+# Error: VCP2020 MaquinaMealy101.v : (230, 16): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 MaquinaMealy101.v : (230, 16): Syntax error. Unexpected token: endcase[_ENDCASE].
+# Compile failure 3 Errors 5 Warnings  Analysis time: 1[s].
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v
+# Warning: VCP2641 MaquinaMealy101.v : (147, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMealy101.v : (148, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMealy101.v : (149, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMealy101.v : (150, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMealy101.v : (151, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Mealy Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v $dsn/src/tb.v $dsn/src/santi.v $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Mealy tbMealy tbMoore tb Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Error: VCP2000 MaquinaMoore.v : (70, 28): Syntax error. Unexpected token: begin[_BEGIN].
+# Compile failure 1 Errors 5 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Error: VCP2020 MaquinaMoore.v : (72, 16): begin...end pair(s) mismatch detected. 1 <end> tokens are missing.
+# Error: VCP2020 MaquinaMoore.v : (72, 16): module/macromodule...endmodule pair(s) mismatch detected. 1 <endmodule> tokens are missing.
+# Error: VCP2000 MaquinaMoore.v : (72, 16): Syntax error. Unexpected token: endcase[_ENDCASE].
+# Compile failure 3 Errors 5 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Warning: VCP2641 MaquinaMoore.v : (33, 38): Redundant digits given in number 2'b000.
+# Warning: VCP2641 MaquinaMoore.v : (34, 39): Redundant digits given in number 2'b001.
+# Warning: VCP2641 MaquinaMoore.v : (35, 37): Redundant digits given in number 2'b010.
+# Warning: VCP2641 MaquinaMoore.v : (36, 38): Redundant digits given in number 2'b011.
+# Warning: VCP2641 MaquinaMoore.v : (37, 36): Redundant digits given in number 2'b100.
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 5 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Unit top modules: Puerta_Moore.
 # Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Error: VCP2000 tb.v : (78, 9): Syntax error. Unexpected token: mili[_IDENTIFIER].
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Error: VCP2000 MaquinaMoore.v : (34, 36): Syntax error. Unexpected token: Js[_IDENTIFIER].
 # Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
+# Unit top modules: Puerta_Moore.
 # Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
 # done
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-endsim
-# VSIM: Simulation has finished.
-asim -O2 +access +r +m+tbMealy tbMealy
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mealy101" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5375 kB (elbread=427 elab2=4813 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:32 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# VSIM: 4 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (33): $finish called.
-# KERNEL: Time: 230 ns,  Iteration: 0,  Instance: /tbMealy,  Process: @INITIAL#13_1@.
-# KERNEL: stopped at time: 230 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# Warning: WAVEFORM: Object matching /tb/clk not found in D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /tb/rst not found in D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /tb/m not found in D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /tb/outMealy not found in D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb.
-# Warning: WAVEFORM: Object matching /tb/outMoore not found in D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb.
-asim -O2 +access +r +m+tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5380 kB (elbread=427 elab2=4818 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:32 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-# VSIM: 5 object(s) traced.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (112): $finish called.
-# KERNEL: Time: 161 ns,  Iteration: 0,  Instance: /tb,  Process: @INITIAL#83_1@.
-# KERNEL: stopped at time: 161 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
-endsim
-# VSIM: Simulation has finished.
-alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/tb.v
-# Unit top modules: tbMealy tbMoore tb.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
-# done
-asim -O2 +access +r +m+tb tb
-# ELBREAD: Elaboration process.
-# ELBREAD: Warning: ELBREAD_0049 The "mili" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Warning: ELBREAD_0049 The "mur" design unit does not have a time unit/precision defined but other design units do.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-# KERNEL: Main thread initiated.
-# KERNEL: Kernel process initialization phase.
-# ELAB2: Elaboration final pass...
-# ELAB2: Create instances ...
-# KERNEL: Time resolution set to 1ps.
-# ELAB2: Create instances complete.
-# ELAB2: Elaboration final pass complete - time: 0.0 [s].
-# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
-# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
-# KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 5380 kB (elbread=427 elab2=4818 kernel=134 sdf=0)
-# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\MaquinasDeEstado\MaquinasDeEstado\src\wave.asdb
-#  10:33 a. m., miércoles, 15 de octubre de 2025
-#  Simulation has been initialized
-# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/MaquinasDeEstado/MaquinasDeEstado/src/wave.asdb'.
-# VSIM: 5 object(s) traced.
-run
-# RUNTIME: Info: RUNTIME_0068 tb.v (112): $finish called.
-# KERNEL: Time: 300 ns,  Iteration: 0,  Instance: /tb,  Process: @INITIAL#83_1@.
-# KERNEL: stopped at time: 300 ns
-# VSIM: Simulation has finished. There are no more test vectors to simulate.
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v
+# Unit top modules: Puerta_Mealy.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s]

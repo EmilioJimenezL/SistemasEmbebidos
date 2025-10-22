@@ -1,3 +1,4 @@
-.\src\MaquinaMealy101.v
+.\src\Puerta_Mealy.v
 .\src\tb.v
 .\src\santi.v
+.\src\Puerta_Moore.v
