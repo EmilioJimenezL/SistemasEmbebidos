@@ -1,0 +1,6 @@
+
+State Machine - |Puerta_Mealy|actual
+Name actual.Cerrado actual.Cerrando actual.Abierto 
+actual.Cerrado 0 0 0 
+actual.Abierto 1 0 1 
+actual.Cerrando 1 1 0 

@@ -1,0 +1,8 @@
+
+State Machine - |Puerta_Moore|actual
+Name actual.Cerrando actual.Abierto actual.Abriendo actual.Cerrado actual.Alarma 
+actual.Cerrado 0 0 0 0 0 
+actual.Abriendo 0 0 1 1 0 
+actual.Abierto 0 1 0 1 0 
+actual.Cerrando 1 0 0 1 0 
+actual.Alarma 0 0 0 1 1 

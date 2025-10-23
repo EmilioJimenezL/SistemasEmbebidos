@@ -110,4 +110,32 @@ alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMoore.v
 # done
 alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/MaquinaMealy101.v
 # Unit top modules: Puerta_Mealy.
-# Compile success 0 Errors 0 Warnings  Analysis time: 0[s]
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Mealy.v
+# Error: VCP2000 Puerta_Mealy.v : (50, 13): Syntax error. Unexpected token: actual[_IDENTIFIER].
+# Compile failure 1 Errors 0 Warnings  Analysis time: 0[s].
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Mealy.v
+# Unit top modules: Puerta_Mealy.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Moore.v
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Moore.v
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Mealy.v
+# Unit top modules: Puerta_Mealy.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Moore.v
+# Unit top modules: Puerta_Moore.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+alog -O2 -sve -msg 5 -sv2k17 -work MaquinasDeEstado $dsn/src/Puerta_Mealy.v $dsn/src/tb.v $dsn/src/santi.v $dsn/src/Puerta_Moore.v
+# Unit top modules: Puerta_Mealy tbMealy tbMoore tb Puerta_Moore.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done

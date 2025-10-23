@@ -2,14 +2,14 @@ module Puerta_Mealy (
     input clk,         // Reloj principal (50MHz)
     input rst,         // Reset
     input sense,       // Sensor de presencia
-    input obs,         // Sensor de obstáculo
+    input obs,         // Sensor de obstï¿½culo
     output reg [1:0] motor, // Salida del motor
     output reg alarm, // Alarma
 	output reg led_clk
 );
-
-	parameter DIVISOR = 50000000; // 1Hz si clk = 50MHz
-	parameter MAX_SECONDS = 5;	//Amount of seconds to wait to switch the slow clock
+	parameter SECONDS = 5;
+	parameter SECONDS_MULTIPLIER = 50000000; // 1Hz si clk = 50MHz
+	parameter DIVISOR = SECONDS*SECONDS_MULTIPLIER;
 
     // ========================
     // Divisor de frecuencia
@@ -40,32 +40,17 @@ module Puerta_Mealy (
     reg [3:0] open_counter = 0; // hasta 10
     reg waiting = 0;
 
-    // Lógica secuencial
+    // Lï¿½gica secuencial
     always @(posedge clk_fsm or posedge rst) begin
         if (rst) begin
             actual <= Cerrado;
-            open_counter <= 0;
-            waiting <= 0;
         end else begin
-			led_clk <= ~led_clk;
-            actual <= siguiente;
-
-            if (actual == Abierto && sense == 0 && obs == 0) begin
-                if (open_counter < MAX_SECONDS) begin
-                    open_counter <= open_counter + 1;
-                    waiting <= 1;
-                end else begin
-                    waiting <= 0;
-                    open_counter <= 0;
-                end
-            end else begin
-                open_counter <= 0;
-                waiting <= 0;
-            end
+				led_clk <= ~led_clk;
+				actual <= siguiente;
         end
     end
 
-    // Lógica combinacional
+    // Lï¿½gica combinacional
     always @(*) begin
         case (actual)
             Cerrado: begin

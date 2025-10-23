@@ -2,15 +2,14 @@ module Puerta_Moore (
     input clk,         // Reloj principal (50MHz)
     input rst,         // Reset
     input sense,       // Sensor de presencia
-    input obs,         // Sensor de obstáculo
+    input obs,         // Sensor de obstï¿½culo
     output reg [1:0] motor, // Salida del motor
     output reg alarm,        // Alarma
 	output reg led_clk
 );
-
-	parameter DIVISOR = 50000000; // 1Hz si clk = 50MHz
-	parameter MAX_SECONDS = 5; //Amount of seconds to wait to switch the slow clock
-
+	parameter MAX_SECONDS = 5;
+	parameter MULTIPLIER = 50000000;
+	parameter DIVISOR = MAX_SECONDS*MULTIPLIER; // 1Hz si clk = 50MHz
     // ========================
     // Divisor de frecuencia
     // ========================
@@ -42,33 +41,17 @@ module Puerta_Moore (
     reg [3:0] open_counter = 0; // hasta 10
     reg waiting = 0;
 
-    // Lógica secuencial
+    // Lï¿½gica secuencial
     always @(posedge clk_fsm or posedge rst) begin
-        if (rst) begin
+        if (rst)
             actual <= Cerrado;
-			siguiente <= Cerrado;
-            open_counter <= 0;
-            waiting <= 0;
-        end else begin
-			led_clk <= ~led_clk;
+        else begin
+				led_clk <= ~led_clk;
             actual <= siguiente;
-
-            if (actual == Abierto && sense == 0 && obs == 0) begin
-                if (open_counter < MAX_SECONDS) begin
-                    open_counter <= open_counter + 1;
-                    waiting <= 1;
-                end else begin
-                    waiting <= 0;
-                    open_counter <= 0;
-                end
-            end else begin
-                open_counter <= 0;
-                waiting <= 0;
-            end
         end
     end
 
-    // Lógica combinacional
+    // Lï¿½gica combinacional
     always @(*) begin
 		case (actual)
 			Cerrado: begin
