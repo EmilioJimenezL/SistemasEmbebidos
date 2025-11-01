@@ -1,0 +1,89 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "semafOut0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "semafOut3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "peatonOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "peatonOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

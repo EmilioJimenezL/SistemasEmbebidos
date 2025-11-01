@@ -1,0 +1,5 @@
+i<>.\src\freq_divider.v
+i<>.\src\semaforo_logica.v
+i<>.\src\semaforo.v
+i<>.\src\semaforo_a_leds.v
+i<>.\src\peaton_a_leds.v

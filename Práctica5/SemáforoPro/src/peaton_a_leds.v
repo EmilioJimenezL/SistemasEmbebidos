@@ -1,0 +1,37 @@
+module peaton_a_leds(
+	input wire clk, rst, 
+	input wire [1:0] peatonalIn,
+	output reg [1:0] peatonalOut
+	);
+	//Diccionario de inputs
+	localparam [1:0] VER_P = 2'b00;
+	localparam [1:0] VER_Pb = 2'b01;
+	localparam [1:0] ROJ_P = 2'b10;
+	//Diccionario de outputs
+	localparam [1:0] Verde = 2'b10;
+	localparam [1:0] Rojo = 2'b01;
+	localparam [1:0] Off = 2'b00;
+	localparam [1:0] Test = 2'b11;
+	//registro blink
+	reg blink = 1;
+	always @(posedge clk or posedge rst) begin
+		if (rst) begin
+			peatonalOut = Off;
+			blink = 1;
+		end else begin
+			case (peatonalIn)
+				VER_P: peatonalOut = Verde;
+				VER_Pb: begin
+					if (blink) begin
+						peatonalOut = Verde;
+						blink = ~blink;
+					end else begin
+						peatonalOut = Off;
+						blink = ~blink;
+					end
+				end
+				ROJ_P: peatonalOut = Rojo;
+			endcase
+		end
+	end	
+endmodule

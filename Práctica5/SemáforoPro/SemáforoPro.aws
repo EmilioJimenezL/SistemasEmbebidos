@@ -1,0 +1,13 @@
+[Version]
+Version=15.0
+[Designs]
+SemáforoPro=SemáforoPro.adf
+[Settings]
+Active=semáforopro
+[Expand]
+semáforopro=1
+[Browser]
+sort=order
+mode=desc
+[Order]
+order=1

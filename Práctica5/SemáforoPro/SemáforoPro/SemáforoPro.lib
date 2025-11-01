@@ -1,0 +1,29 @@
+timestamp=1761764856260
+
+[~A]
+D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/freq_divider.v=0*432*1045
+LastVerilogToplevel=freq_divider
+ModifyID=1
+Version=74
+
+[~MFT]
+0=4|0SemáforoPro.mgf|1045|0
+1=2|1SemáforoPro.mgf|374|0
+3=4|3SemáforoPro.mgf|1161|0
+
+[$root]
+A/$root=22|||1*0
+BinW64/$root=3*0
+SLP=3*115
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921686a0d6e63ccb0e9fc35097a9c7d2630c
+
+[freq_divider]
+A/freq_divider=22|../src/freq_divider.v|1|1*374
+BinW64/freq_divider=3*183
+R=../src/freq_divider.v|1
+SLP=3*1161
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f6ecf38df482688e23f135587a5f75d9d702406d3854c0e19c7559cba72fc61fad973b596cb592499688126d956052bf
+
+[~U]
+$root=12|0*0|
+freq_divider=12|0*182||0x10

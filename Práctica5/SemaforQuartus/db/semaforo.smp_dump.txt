@@ -1,0 +1,23 @@
+
+State Machine - |semaforo|semaforo_logica:logica_1|actual
+Name actual.S19 actual.S18 actual.S17 actual.S16 actual.S15 actual.S14 actual.S13 actual.S12 actual.S11 actual.S10 actual.S9 actual.S8 actual.S7 actual.S6 actual.S5 actual.S4 actual.S3 actual.S2 actual.S1 actual.S0 
+actual.S0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+actual.S1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+actual.S2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+actual.S3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+actual.S4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+actual.S5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+actual.S6 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+actual.S7 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+actual.S8 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+actual.S9 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+actual.S10 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+actual.S11 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+actual.S12 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S13 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S14 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S15 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S16 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S17 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S18 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+actual.S19 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
