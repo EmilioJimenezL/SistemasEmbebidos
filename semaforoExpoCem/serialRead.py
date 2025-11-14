@@ -64,3 +64,6 @@ def serialRead(serialPort, verbose = False):
     return data
 
 def serialWrite(serialPort, command, verbose = False):
+    serialPort.write(command.encode())
+    if verbose:
+        print("Command sent:" + command)

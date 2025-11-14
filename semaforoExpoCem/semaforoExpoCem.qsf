@@ -64,11 +64,11 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_P11 -to clk
 set_location_assignment PIN_C10 -to rst
-set_location_assignment PIN_AA12 -to estado[0]
-set_location_assignment PIN_AA11 -to estado[1]
-set_location_assignment PIN_Y10 -to estado[2]
-set_location_assignment PIN_AB9 -to estado[3]
-set_location_assignment PIN_AB8 -to estado[4]
+set_location_assignment PIN_AA11 -to estado[0]
+set_location_assignment PIN_Y10 -to estado[1]
+set_location_assignment PIN_AB9 -to estado[2]
+set_location_assignment PIN_AB8 -to estado[3]
+set_location_assignment PIN_AB7 -to estado[4]
 set_location_assignment PIN_C11 -to emergencia
 set_location_assignment PIN_F15 -to prioridad1
 set_location_assignment PIN_B14 -to prioridad2
