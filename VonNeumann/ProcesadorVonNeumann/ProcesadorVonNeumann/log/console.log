@@ -1,0 +1,8 @@
+# Design: Design ProcesadorVonNeumann already active.
+# DESIGN: Default Design Language: VERILOG
+# DESIGN: Default BDE Language: VERILOG
+# DESIGN: Flow Manager: Not Defined
+alog -O2 -sve -msg 5 -sv2k17 -work ProcesadorVonNeumann $dsn/src/alu4.v
+# Unit top modules: alu4.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done

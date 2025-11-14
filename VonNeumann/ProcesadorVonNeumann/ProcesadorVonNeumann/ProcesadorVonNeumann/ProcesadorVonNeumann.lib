@@ -1,0 +1,29 @@
+timestamp=1762973944149
+
+[~A]
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/alu4.v=0*509*1625
+LastVerilogToplevel=alu4
+ModifyID=1
+Version=74
+
+[~MFT]
+0=4|0ProcesadorVonNeumann.mgf|1625|0
+1=2|1ProcesadorVonNeumann.mgf|374|0
+3=4|3ProcesadorVonNeumann.mgf|2664|0
+
+[$root]
+A/$root=22|||1*0
+BinW64/$root=3*0
+SLP=3*115
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921637a5b15daae12ea7152f53126fcb9e5a
+
+[alu4]
+A/alu4=22|../src/alu4.v|2|1*374
+BinW64/alu4=3*183
+R=../src/alu4.v|2
+SLP=3*2664
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ee61283078cb91d43bdcf190c11b90d6acd3a5e69367758466fc40465b5e0ba3
+
+[~U]
+$root=12|0*0|
+alu4=12|0*166||0x10
