@@ -1,2 +1,124 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
+alog -O2 -sve -msg 5 -sv2k17 -work sem?foropro $dsn/src/freq_divider.v $dsn/src/semaforo_logica.v $dsn/src/semaforo.v $dsn/src/semaforo_a_leds.v $dsn/src/peaton_a_leds.v
+# Unit top modules: semaforo.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+asim -O2 +access +r +m+semaforo semaforo
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5407 kB (elbread=427 elab2=4842 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Práctica5\SemáforoPro\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet3" has been made inactive.
+#  11:47 p. m., martes, 18 de noviembre de 2025
+#  Simulation has been initialized
+# VSIM: 15 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/wave.asdb'.
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+alog -O2 -sve -msg 5 -sv2k17 -work sem?foropro $dsn/src/freq_divider.v $dsn/src/semaforo_logica.v $dsn/src/semaforo.v $dsn/src/semaforo_a_leds.v $dsn/src/peaton_a_leds.v
+# Unit top modules: semaforo.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O2 +access +r +m+semaforo semaforo
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5407 kB (elbread=427 elab2=4842 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Práctica5\SemáforoPro\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet4" has been made inactive.
+#  11:49 p. m., martes, 18 de noviembre de 2025
+#  Simulation has been initialized
+# VSIM: 15 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/wave.asdb'.
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+alog -O2 -sve -msg 5 -sv2k17 -work sem?foropro $dsn/src/freq_divider.v $dsn/src/semaforo_logica.v $dsn/src/semaforo.v $dsn/src/semaforo_a_leds.v $dsn/src/peaton_a_leds.v
+# Unit top modules: semaforo.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O2 +access +r +m+semaforo semaforo
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5407 kB (elbread=427 elab2=4842 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Práctica5\SemáforoPro\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet5" has been made inactive.
+#  11:54 p. m., martes, 18 de noviembre de 2025
+#  Simulation has been initialized
+# VSIM: 14 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/wave.asdb'.
+run 10000 ns
+# KERNEL: stopped at time: 10 us
+alog -O2 -sve -msg 5 -sv2k17 -work sem?foropro $dsn/src/freq_divider.v $dsn/src/semaforo_logica.v $dsn/src/semaforo.v $dsn/src/semaforo_a_leds.v $dsn/src/peaton_a_leds.v
+# Unit top modules: semaforo.
+# Compile success 0 Errors 0 Warnings  Analysis time: 0[s].
+# done
+endsim
+# VSIM: Simulation has finished.
+asim -O2 +access +r +m+semaforo semaforo
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5407 kB (elbread=427 elab2=4842 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location D:\Tareas\Otono25\Sistemas Embebidos\Práctica5\SemáforoPro\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet6" has been made inactive.
+#  11:57 p. m., martes, 18 de noviembre de 2025
+#  Simulation has been initialized
+# VSIM: 14 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/wave.asdb'.
+run 10000 ns
+# KERNEL: stopped at time: 10 us

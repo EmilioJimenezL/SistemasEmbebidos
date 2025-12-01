@@ -158,20 +158,20 @@ rst => counter[29].ACLR
 rst => counter[30].ACLR
 rst => counter[31].ACLR
 rst => actual~23.DATAIN
-semaforo0[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-semaforo0[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-semaforo0[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-semaforo1[0] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+semaforo0[0] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+semaforo0[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+semaforo0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+semaforo1[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
 semaforo1[1] <= semaforo1.DB_MAX_OUTPUT_PORT_TYPE
-semaforo1[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-semaforo2[0] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
-semaforo2[1] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
-semaforo2[2] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-semaforo3[0] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+semaforo1[2] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+semaforo2[0] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+semaforo2[1] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+semaforo2[2] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+semaforo3[0] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
 semaforo3[1] <= semaforo3.DB_MAX_OUTPUT_PORT_TYPE
-semaforo3[2] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+semaforo3[2] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
 peatonal[0] <= peatonal.DB_MAX_OUTPUT_PORT_TYPE
-peatonal[1] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+peatonal[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |semaforo|semaforo_a_leds:sem_a_led_0

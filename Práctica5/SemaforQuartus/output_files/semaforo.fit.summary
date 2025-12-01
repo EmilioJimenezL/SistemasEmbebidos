@@ -1,12 +1,12 @@
-Fitter Status : Successful - Thu Oct 30 12:07:01 2025
+Fitter Status : Successful - Thu Nov 27 09:59:57 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : semaforo
 Top-level Entity Name : semaforo
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 141 / 49,760 ( < 1 % )
-    Total combinational functions : 131 / 49,760 ( < 1 % )
+Total logic elements : 148 / 49,760 ( < 1 % )
+    Total combinational functions : 133 / 49,760 ( < 1 % )
     Dedicated logic registers : 108 / 49,760 ( < 1 % )
 Total registers : 108
 Total pins : 20 / 360 ( 6 % )

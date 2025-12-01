@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Fri Nov 14 17:52:03 2025
+Analysis & Synthesis Status : Successful - Wed Nov 19 11:08:06 2025
 Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 Revision Name : semaforoExpoCem
 Top-level Entity Name : semaforoExpoCem
 Family : MAX 10
-Total logic elements : 174
-    Total combinational functions : 174
-    Dedicated logic registers : 93
-Total registers : 93
-Total pins : 31
+Total logic elements : 95
+    Total combinational functions : 95
+    Dedicated logic registers : 56
+Total registers : 56
+Total pins : 25
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

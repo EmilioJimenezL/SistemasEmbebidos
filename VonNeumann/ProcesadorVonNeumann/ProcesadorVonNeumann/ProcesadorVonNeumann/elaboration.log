@@ -1,0 +1,34 @@
+Active-HDL 15.0.261.9132 2025-12-01 10:21:28
+
+Elaboration top modules:
+Verilog Module                procesador
+
+
+--------------------------------------------------------------------------------------------------------
+Verilog Module          | Library              | Info | Compiler Version          | Compilation Options
+--------------------------------------------------------------------------------------------------------
+procesador              | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+sel_dato                | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+tri_est                 | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+pc                      | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+indice                  | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+stack                   | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+sel_dir                 | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+dir_val                 | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+control                 | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+alu                     | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+rega5                   | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+regb5                   | procesadorvonneumann |      | 15.0.261.9132 (Windows64) | -O2 -sv2k17
+--------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+Library                 | Comment
+--------------------------------------------------------------------------------------------------------
+procesadorvonneumann    | None
+--------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O2 +access +r +m+procesador procesador
+
+
+The performance of simulation is reduced. Version Student Edition

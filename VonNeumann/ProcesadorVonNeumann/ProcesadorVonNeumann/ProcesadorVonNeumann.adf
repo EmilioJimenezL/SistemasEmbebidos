@@ -16,11 +16,36 @@ LANGUAGE=VERILOG
 REFRESH_FLOW=1
 FLOWTOOLS=NONE
 FAMILY=
+fileopenfolder=C:\Users\emiiv\Downloads
 [Files.Data]
-.\src\alu4.v=Verilog Source Code
-[Files]
-/alu4.v=-1
+.\src\tri_est.v=Verilog Source Code
+.\src\sel_dato.v=Verilog Source Code
+.\src\stack.v=Verilog Source Code
+.\src\sel_dir.v=Verilog Source Code
+.\src\regb5.v=Verilog Source Code
+.\src\control.v=Verilog Source Code
+.\src\alu.v=Verilog Source Code
+.\src\rega5.v=Verilog Source Code
+.\src\pc.v=Verilog Source Code
+.\src\indice.v=Verilog Source Code
+.\src\dir_val.v=Verilog Source Code
+.\src\microprocesador.v=Verilog Source Code
+.\src\tb.v=Verilog Source Code
 [HierarchyViewer]
 HierarchyInformation=
 ShowHide=ShowTopLevel
 Selected=
+[Files]
+/tri_est.v=-1
+/sel_dato.v=-1
+/stack.v=-1
+/sel_dir.v=-1
+/regb5.v=-1
+/control.v=-1
+/alu.v=-1
+/rega5.v=-1
+/pc.v=-1
+/indice.v=-1
+/dir_val.v=-1
+/microprocesador.v=-1
+/tb.v=-1

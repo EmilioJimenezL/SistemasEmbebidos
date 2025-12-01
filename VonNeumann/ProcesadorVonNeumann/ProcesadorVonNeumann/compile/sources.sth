@@ -1,0 +1,14 @@
+[Files List]
+C:/Aldec/Active-HDL-Student-Edition/vlib/std/src/standard.vhd=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/regb5.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/rega5.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/alu.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/control.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/dir_val.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/sel_dir.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/stack.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/indice.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/pc.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/tri_est.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/sel_dato.v=S
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/microprocesador.v=S

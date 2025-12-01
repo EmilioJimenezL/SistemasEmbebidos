@@ -4,26 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "estado[0]",
-					"strict" : false
-				},
-				{
-					"name" : "estado[1]",
-					"strict" : false
-				},
-				{
-					"name" : "estado[2]",
-					"strict" : false
-				},
-				{
-					"name" : "estado[3]",
-					"strict" : false
-				},
-				{
-					"name" : "estado[4]",
-					"strict" : false
-				},
-				{
 					"name" : "semafOut0[0]",
 					"strict" : false
 				},
@@ -96,27 +76,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "prioridad2",
+					"name" : "estado[0]",
 					"strict" : false
 				},
 				{
-					"name" : "prioridad4",
+					"name" : "estado[1]",
 					"strict" : false
 				},
 				{
-					"name" : "prioridad3",
+					"name" : "estado[2]",
 					"strict" : false
 				},
 				{
-					"name" : "prioridad1",
+					"name" : "estado[3]",
 					"strict" : false
 				},
 				{
-					"name" : "prioridadPeaton",
-					"strict" : false
-				},
-				{
-					"name" : "emergencia",
+					"name" : "estado[4]",
 					"strict" : false
 				},
 				{

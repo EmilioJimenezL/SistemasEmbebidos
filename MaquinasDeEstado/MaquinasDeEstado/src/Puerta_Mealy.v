@@ -7,7 +7,7 @@ module Puerta_Mealy (
     output reg alarm, // Alarma
 	output reg led_clk
 );
-	parameter SECONDS = 5;
+	parameter SECONDS = 1;
 	parameter SECONDS_MULTIPLIER = 50000000; // 1Hz si clk = 50MHz
 	parameter DIVISOR = SECONDS*SECONDS_MULTIPLIER;
 

@@ -1,4 +1,4 @@
-Active-HDL 15.0.261.9132 2025-10-30 09:55:30
+Active-HDL 15.0.261.9132 2025-11-18 23:57:11
 
 Elaboration top modules:
 Verilog Module                semaforo
@@ -19,3 +19,9 @@ Library                 | Comment
 -----------------------------------------------------------------------------------------------
 sem?foropro             | None
 -----------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O2 +access +r +m+semaforo semaforo
+
+
+The performance of simulation is reduced. Version Student Edition

@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Sun Nov 16 21:56:20 2025
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : clock_smoke_test
+Top-level Entity Name : clock_smoke_test
+Family : MAX 10
+Total logic elements : 48
+    Total combinational functions : 48
+    Dedicated logic registers : 27
+Total registers : 27
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

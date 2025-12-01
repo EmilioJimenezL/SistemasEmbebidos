@@ -1,21 +1,32 @@
-timestamp=1762973944149
+timestamp=1764026120530
 
 [~A]
 D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/alu4.v=0*509*1625
-LastVerilogToplevel=alu4
-ModifyID=1
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/microprocesador.v=0*189380*190411
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/tri_est.v_sel_dato.v_stack.v_sel_dir.v_regb5.v_control.v_alu.v_rega5.v_pc.v_indice.v_dir_val.v=0*5111*8252
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/tri_est.v_sel_dato.v_stack.v_sel_dir.v_regb5.v_control.v_alu.v_rega5.v_pc.v_indice.v_dir_val.v_microprocesador.v=0*350008*353695
+D:/Tareas/Otono25/Sistemas Embebidos/VonNeumann/ProcesadorVonNeumann/ProcesadorVonNeumann/src/tri_est.v_sel_dato.v_stack.v_sel_dir.v_regb5.v_control.v_alu.v_rega5.v_pc.v_indice.v_dir_val.v_microprocesador.v_tb.v=0*366378*370502
+LastVerilogToplevel=fibonacci_tb
+ModifyID=57
 Version=74
 
 [~MFT]
-0=4|0ProcesadorVonNeumann.mgf|1625|0
-1=2|1ProcesadorVonNeumann.mgf|374|0
-3=4|3ProcesadorVonNeumann.mgf|2664|0
+0=18|0ProcesadorVonNeumann.mgf|370502|204157
+1=28|1ProcesadorVonNeumann.mgf|1030798|1005666
+3=56|3ProcesadorVonNeumann.mgf|744006|721467
 
 [$root]
-A/$root=22|||1*0
-BinW64/$root=3*0
-SLP=3*115
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921637a5b15daae12ea7152f53126fcb9e5a
+A/$root=22|||1*1008525
+BinW64/$root=3*726274
+SLP=3*726389
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c921674929e2e0d79f475b2898830baaac0de
+
+[alu]
+A/alu=22|../src/alu.v|1|1*1020633
+BinW64/alu=3*734995
+R=../src/alu.v|1
+SLP=3*736508
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|fdc9c85601beb4171a6a25c637e2168e7aa37886966070f70fe4c6591355453e
 
 [alu4]
 A/alu4=22|../src/alu4.v|2|1*374
@@ -24,6 +35,103 @@ R=../src/alu4.v|2
 SLP=3*2664
 Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ee61283078cb91d43bdcf190c11b90d6acd3a5e69367758466fc40465b5e0ba3
 
+[control]
+A/control=22|../src/control.v|1|1*1015894
+BinW64/control=3*731364
+R=../src/control.v|1
+SLP=3*733211
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f2cabf5e9d8860133c44841e25d9d38726527262ddaa47cb266f3a3c4d9b973aa5eaf7bb9bc7eb8d394492bd447c80d3
+
+[dir_val]
+A/dir_val=22|../src/dir_val.v|1|1*1026099
+BinW64/dir_val=3*741122
+R=../src/dir_val.v|1
+SLP=3*741747
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e0d02aecef6acdb55498084ef31d5a6926527262ddaa47cb266f3a3c4d9b973ad822ed9551a89bcf0c2d67915edc0e54
+
+[fibonacci_tb]
+A/fibonacci_tb=22|../src/tb.v|3|1*1030798
+BinW64/fibonacci_tb=3*742378
+R=../src/tb.v|3
+SLP=3*744006
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|795161ef34ec5066a93879f68df2b127c39701e0a860b845b618d30eea8afdd89a123a0cf02a2b90f232505c131e62ac
+
+[indice]
+A/indice=22|../src/indice.v|1|1*1024894
+BinW64/indice=3*740034
+R=../src/indice.v|1
+SLP=3*740758
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ab589d3d49ee9222687b6da278484aaa9f8c0f130ec860478eeaf59c9e355286
+
+[pc]
+A/pc=22|../src/pc.v|1|1*1023570
+BinW64/pc=3*738929
+R=../src/pc.v|1
+SLP=3*739629
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|e4c3b9c1a0cb632b487294b82186bd9d908f82eb7313cf63777ad761a1712626
+
+[procesador]
+A/procesador=22|../src/microprocesador.v|1|1*1027183
+BinW64/procesador=3*742103
+R=../src/microprocesador.v|1
+SLP=3*742223
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|06f2d3cd25441a3caa6ed4067a9fbfb1777f23c8df6524548e9bff94c1069994140b56a741ba07b1634ec09f46f68168
+
+[rega5]
+A/rega5=22|../src/rega5.v|1|1*1022241
+BinW64/rega5=3*737845
+R=../src/rega5.v|1
+SLP=3*738520
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|696dee48d6cc01083805cff259ddc54f69ab3f4c1a1bbb53a784f392f26cdba2
+
+[regb5]
+A/regb5=22|../src/regb5.v|1|1*1014565
+BinW64/regb5=3*730292
+R=../src/regb5.v|1
+SLP=3*730963
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|2304f8e6dff1520bac6a9efdd22361d26fb064d39397585848a9dcccbcd5d896
+
+[sel_dato]
+A/sel_dato=22|../src/sel_dato.v|1|1*1010384
+BinW64/sel_dato=3*727491
+R=../src/sel_dato.v|1
+SLP=3*728116
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3bc653e540b5c4dd09d5e2e9d9e773f4257a08b95c9a80cfdbb2c82194e4e6f043456c8e2677710e49384b9c7b3281b1
+
+[sel_dir]
+A/sel_dir=22|../src/sel_dir.v|1|1*1013077
+BinW64/sel_dir=3*729371
+R=../src/sel_dir.v|1
+SLP=3*729965
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|ac9e8259f76d5cc7b6f00decef070f5c26527262ddaa47cb266f3a3c4d9b973a493c32303f8757fb4c556c5f3cf2b539
+
+[stack]
+A/stack=22|../src/stack.v|1|1*1011882
+BinW64/stack=3*728472
+R=../src/stack.v|1
+SLP=3*729057
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|2ed4df2fade9bedabaa537e76064e746549310b585f2e41fbba35c7766fcb897
+
+[tri_est]
+A/tri_est=22|../src/tri_est.v|1|1*1008899
+BinW64/tri_est=3*726457
+R=../src/tri_est.v|1
+SLP=3*727123
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|a3b7bc3dd2aa1d7e79b50f29d3dbbc9026527262ddaa47cb266f3a3c4d9b973aa6baa6548b1a4495184177e131bcf262
+
 [~U]
-$root=12|0*0|
+$root=12|0*362924|
+alu=12|0*364695|
 alu4=12|0*166||0x10
+control=12|0*364315|
+dir_val=12|0*365614|
+fibonacci_tb=12|0*366136||0x10
+indice=12|0*365381|
+pc=12|0*365150|
+procesador=12|0*365810|
+rega5=12|0*364925|
+regb5=12|0*364090|
+sel_dato=12|0*363394|
+sel_dir=12|0*363857|
+stack=12|0*363629|
+tri_est=12|0*363170|

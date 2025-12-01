@@ -1,1 +1,13 @@
-i<>.\src\alu4.v
+i<>.\src\tri_est.v
+i<>.\src\sel_dato.v
+i<>.\src\stack.v
+i<>.\src\sel_dir.v
+i<>.\src\regb5.v
+i<>.\src\control.v
+i<>.\src\alu.v
+i<>.\src\rega5.v
+i<>.\src\pc.v
+i<>.\src\indice.v
+i<>.\src\dir_val.v
+i<>.\src\microprocesador.v
+i<>.\src\tb.v

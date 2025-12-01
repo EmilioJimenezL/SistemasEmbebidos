@@ -62,17 +62,29 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_P11 -to clk
 set_location_assignment PIN_C10 -to rst
-set_location_assignment PIN_AA11 -to estado[0]
-set_location_assignment PIN_Y10 -to estado[1]
-set_location_assignment PIN_AB9 -to estado[2]
-set_location_assignment PIN_AB8 -to estado[3]
-set_location_assignment PIN_AB7 -to estado[4]
-set_location_assignment PIN_C11 -to emergencia
-set_location_assignment PIN_F15 -to prioridad1
-set_location_assignment PIN_B14 -to prioridad2
-set_location_assignment PIN_A14 -to prioridad3
-set_location_assignment PIN_A13 -to prioridad4
-set_location_assignment PIN_B12 -to prioridadPeaton
+set_location_assignment PIN_AA2 -to estado[0]
+set_location_assignment PIN_AB2 -to estado[1]
+set_location_assignment PIN_Y3 -to estado[2]
+set_location_assignment PIN_AB3 -to estado[3]
+set_location_assignment PIN_Y4 -to estado[4]
+set_location_assignment PIN_AB11 -to peatonOut[1]
+set_location_assignment PIN_W11 -to peatonOut[0]
+set_location_assignment PIN_V10 -to semafOut0[3]
+set_location_assignment PIN_W10 -to semafOut0[2]
+set_location_assignment PIN_V9 -to semafOut0[1]
+set_location_assignment PIN_W9 -to semafOut0[0]
+set_location_assignment PIN_P11 -to clk
+set_location_assignment PIN_V8 -to semafOut1[3]
+set_location_assignment PIN_W8 -to semafOut1[2]
+set_location_assignment PIN_V7 -to semafOut1[1]
+set_location_assignment PIN_W7 -to semafOut1[0]
+set_location_assignment PIN_W6 -to semafOut2[3]
+set_location_assignment PIN_V5 -to semafOut2[2]
+set_location_assignment PIN_W5 -to semafOut2[1]
+set_location_assignment PIN_AA15 -to semafOut2[0]
+set_location_assignment PIN_AA14 -to semafOut3[3]
+set_location_assignment PIN_W13 -to semafOut3[2]
+set_location_assignment PIN_W12 -to semafOut3[1]
+set_location_assignment PIN_AB13 -to semafOut3[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

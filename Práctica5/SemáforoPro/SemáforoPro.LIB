@@ -1,67 +1,67 @@
-timestamp=1761795314692
+timestamp=1763531812344
 
 [~A]
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/freq_divider.v=0*20929*21542
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/freq_divider.v_semaforo_logica.v_semaforo.v_semaforo_a_leds.v=0*46204*48641
-D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/freq_divider.v_semaforo_logica.v_semaforo.v_semaforo_a_leds.v_peaton_a_leds.v=0*71934*74659
+D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/freq_divider.v_semaforo_logica.v_semaforo.v_semaforo_a_leds.v_peaton_a_leds.v=0*94930*97639
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/peaton_a_leds.v=0*61709*62435
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/semaforo.v=0*75864*76601
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/semaforo_a_leds.v=0*43221*44093
 D:/Tareas/Otono25/Sistemas Embebidos/Práctica5/SemáforoPro/src/semaforo_logica.v=0*18231*19904
 LastVerilogToplevel=semaforo
-ModifyID=35
+ModifyID=39
 Version=74
 
 [~MFT]
-0=6|0SemáforoPro.mgf|76601|40549
-1=4|1SemáforoPro.mgf|161105|147672
-3=8|3SemáforoPro.mgf|82221|71737
+0=10|0SemáforoPro.mgf|97639|54253
+1=12|1SemáforoPro.mgf|227127|213133
+3=24|3SemáforoPro.mgf|124701|114559
 
 [$root]
-A/$root=22|||1*160731
-BinW64/$root=3*81920
-SLP=3*82035
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216f8252ba96244187f30a2033f0cd919ac
+A/$root=22|||1*213133
+BinW64/$root=3*114559
+SLP=3*114674
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|c73a565f2ade592f8ac1c68f484c9216b0d0f8b7f3dc8c0b2652ec433182bb9a
 
 [freq_divider]
-A/freq_divider=22|./src/freq_divider.v|1|1*144808
-BinW64/freq_divider=3*71435
+A/freq_divider=22|./src/freq_divider.v|1|1*213507
+BinW64/freq_divider=3*114742
 R=./src/freq_divider.v|1
-SLP=3*72413
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f6ecf38df482688e23f135587a5f75d9d702406d3854c0e19c7559cba72fc61fd5f121411f81ced4aca8e8b9d55bea47
+SLP=3*115720
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|f6ecf38df482688e23f135587a5f75d9d702406d3854c0e19c7559cba72fc61fc0e7c7b717b8d37598a9853096b09f51
 
 [peaton_a_leds]
-A/peaton_a_leds=22|./src/peaton_a_leds.v|1|1*158465
-BinW64/peaton_a_leds=3*80567
+A/peaton_a_leds=22|./src/peaton_a_leds.v|1|1*227127
+BinW64/peaton_a_leds=3*123797
 R=./src/peaton_a_leds.v|1
-SLP=3*81472
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8907cdf678f4e4b4785f2eec5035c208923a65c10120d58adca952c2433b105d414d0328142a36f8b8b8d18b60b65cf4
+SLP=3*124701
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|8907cdf678f4e4b4785f2eec5035c208923a65c10120d58adca952c2433b105d11d4940c01197f1adefc423fa47dbc4f
 
 [semaforo]
-A/semaforo=22|./src/semaforo.v|1|1*161105
-BinW64/semaforo=3*82103
+A/semaforo=22|./src/semaforo.v|1|1*221128
+BinW64/semaforo=3*121643
 R=./src/semaforo.v|1
-SLP=3*82221
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d94f83b3122d73acb3aaf422499b47ce6b28b4e53bff683f3c57bc95b85ee1bc9f5a1d4c58e6a864067d8fd351ca1157
+SLP=3*121761
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|d94f83b3122d73acb3aaf422499b47ce6b28b4e53bff683f3c57bc95b85ee1bcd256afbab0ae7ece9bb57709bdc65469
 
 [semaforo_a_leds]
-A/semaforo_a_leds=22|./src/semaforo_a_leds.v|1|1*155307
-BinW64/semaforo_a_leds=3*78717
+A/semaforo_a_leds=22|./src/semaforo_a_leds.v|1|1*223969
+BinW64/semaforo_a_leds=3*121944
 R=./src/semaforo_a_leds.v|1
-SLP=3*79856
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3c8bc4255a655786c062b381036c126f250da89ee1b58144ac4ea74dbdecbabfc0887760388892d3edcd25ed79495034
+SLP=3*123086
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|3c8bc4255a655786c062b381036c126f250da89ee1b58144ac4ea74dbdecbabfc9bc2f0fc5481ee264c10fe508068b49
 
 [semaforo_logica]
-A/semaforo_logica=22|./src/semaforo_logica.v|1|1*146089
-BinW64/semaforo_logica=3*72828
+A/semaforo_logica=22|./src/semaforo_logica.v|1|1*214774
+BinW64/semaforo_logica=3*116135
 R=./src/semaforo_logica.v|1
-SLP=3*75821
-Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7c934515cb9f02a80a4cdd2b017d47d2facb0cdbffdccbcc83ab613fadfeb0c89f227ebff20ade11069c304d41928547
+SLP=3*119049
+Version=15.0.261.9132 (Windows64)|0000000b789cd3f53752d02d2e33ca3634070010af02ea|7c934515cb9f02a80a4cdd2b017d47d2facb0cdbffdccbcc83ab613fadfeb0c81c814a0692e6996e03f5d8186027e4cb
 
 [~U]
-$root=12|0*75344|
-freq_divider=12|0*70284|
-peaton_a_leds=12|0*71633|
-semaforo=12|0*75558||0x10
-semaforo_a_leds=12|0*71283|
-semaforo_logica=12|0*70534|
+$root=12|0*93070|
+freq_divider=12|0*93284|
+peaton_a_leds=12|0*94629|
+semaforo=12|0*93974||0x10
+semaforo_a_leds=12|0*94279|
+semaforo_logica=12|0*93531|

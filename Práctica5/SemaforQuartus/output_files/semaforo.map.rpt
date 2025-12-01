@@ -1,5 +1,5 @@
 Analysis & Synthesis report for semaforo
-Thu Oct 30 12:06:54 2025
+Thu Nov 27 09:59:50 2025
 Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
 
 
@@ -46,13 +46,13 @@ on the Quartus Prime software download page.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 30 12:06:54 2025           ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 27 09:59:50 2025           ;
 ; Quartus Prime Version              ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
 ; Revision Name                      ; semaforo                                        ;
 ; Top-level Entity Name              ; semaforo                                        ;
 ; Family                             ; MAX 10                                          ;
-; Total logic elements               ; 148                                             ;
-;     Total combinational functions  ; 130                                             ;
+; Total logic elements               ; 150                                             ;
+;     Total combinational functions  ; 132                                             ;
 ;     Dedicated logic registers      ; 108                                             ;
 ; Total registers                    ; 108                                             ;
 ; Total pins                         ; 20                                              ;
@@ -164,7 +164,8 @@ on the Quartus Prime software download page.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -186,16 +187,16 @@ on the Quartus Prime software download page.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 148       ;
+; Estimated Total logic elements              ; 150       ;
 ;                                             ;           ;
-; Total combinational functions               ; 130       ;
+; Total combinational functions               ; 132       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 48        ;
-;     -- 3 input functions                    ; 12        ;
+;     -- 4 input functions                    ; 49        ;
+;     -- 3 input functions                    ; 13        ;
 ;     -- <=2 input functions                  ; 70        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 68        ;
+;     -- normal mode                          ; 70        ;
 ;     -- arithmetic mode                      ; 62        ;
 ;                                             ;           ;
 ; Total registers                             ; 108       ;
@@ -208,8 +209,8 @@ on the Quartus Prime software download page.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; rst~input ;
 ; Maximum fan-out                             ; 108       ;
-; Total fan-out                               ; 810       ;
-; Average fan-out                             ; 2.91      ;
+; Total fan-out                               ; 817       ;
+; Average fan-out                             ; 2.92      ;
 +---------------------------------------------+-----------+
 
 
@@ -218,14 +219,14 @@ on the Quartus Prime software download page.
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                   ; Entity Name     ; Library Name ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------+-----------------+--------------+
-; |semaforo                        ; 130 (0)             ; 108 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 20   ; 0            ; 0          ; |semaforo                             ; semaforo        ; work         ;
-;    |freq_divider:clk1_seg|       ; 45 (45)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|freq_divider:clk1_seg       ; freq_divider    ; work         ;
+; |semaforo                        ; 132 (0)             ; 108 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 20   ; 0            ; 0          ; |semaforo                             ; semaforo        ; work         ;
+;    |freq_divider:clk1_seg|       ; 43 (43)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|freq_divider:clk1_seg       ; freq_divider    ; work         ;
 ;    |peaton_a_leds:ped_a_led|     ; 2 (2)               ; 3 (3)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|peaton_a_leds:ped_a_led     ; peaton_a_leds   ; work         ;
 ;    |semaforo_a_leds:sem_a_led_0| ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_a_leds:sem_a_led_0 ; semaforo_a_leds ; work         ;
 ;    |semaforo_a_leds:sem_a_led_1| ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_a_leds:sem_a_led_1 ; semaforo_a_leds ; work         ;
 ;    |semaforo_a_leds:sem_a_led_2| ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_a_leds:sem_a_led_2 ; semaforo_a_leds ; work         ;
 ;    |semaforo_a_leds:sem_a_led_3| ; 5 (5)               ; 5 (5)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_a_leds:sem_a_led_3 ; semaforo_a_leds ; work         ;
-;    |semaforo_logica:logica_1|    ; 63 (63)             ; 52 (52)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_logica:logica_1    ; semaforo_logica ; work         ;
+;    |semaforo_logica:logica_1|    ; 67 (67)             ; 52 (52)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |semaforo|semaforo_logica:logica_1    ; semaforo_logica ; work         ;
 +----------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -312,17 +313,17 @@ Encoding Type:  One-Hot
 ;     CLR               ; 24                          ;
 ;     CLR SCLR          ; 64                          ;
 ;     ENA CLR           ; 20                          ;
-; cycloneiii_lcell_comb ; 130                         ;
+; cycloneiii_lcell_comb ; 132                         ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 62                          ;
-;     normal            ; 68                          ;
+;     normal            ; 70                          ;
 ;         1 data inputs ; 4                           ;
 ;         2 data inputs ; 4                           ;
-;         3 data inputs ; 12                          ;
-;         4 data inputs ; 48                          ;
+;         3 data inputs ; 13                          ;
+;         4 data inputs ; 49                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.83                        ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 3.14                        ;
 +-----------------------+-----------------------------+
 
 
@@ -341,7 +342,7 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
-    Info: Processing started: Thu Oct 30 12:06:49 2025
+    Info: Processing started: Thu Nov 27 09:59:44 2025
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off semaforo -c semaforo
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -366,14 +367,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 5 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 170 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 171 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 150 logic cells
+    Info (21061): Implemented 151 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 479 megabytes
-    Info: Processing ended: Thu Oct 30 12:06:54 2025
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:17
+    Info: Peak virtual memory: 491 megabytes
+    Info: Processing ended: Thu Nov 27 09:59:50 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:16
 
 
